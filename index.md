@@ -20,5 +20,3 @@ Por ahora puedes ver:
 * [Documentos](/docs/document_index.md)
 * [Un cómic](https://c.xkcd.com/random/comic/)
 
-
-# hey
