@@ -36,6 +36,9 @@ Aquí encontraras mis documentos, si buscas algo en especial usa la tecla <code>
 * [How to have all your contacts on one safe place.](https://alex-esc.github.io/blog/contacts.html)
 * Why Online Privacy Matters? (Ingles)
 
+## Homework Archive
+
+[alex-esc.neocities.org](https://alex-esc.neocities.org/)
 
 ---
 
