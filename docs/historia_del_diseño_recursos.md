@@ -2,7 +2,7 @@
 
 ## Notas de clase
 
-Mis notas fueron tomadas usando Markdown, fueron convertidas a esta presentación.
+Mis notas fueron tomadas usando [Markdown](https://gist.githubusercontent.com/alex-esc/1d900daad82d36a70b45502074e8f07e/raw/be7c2681f310f68cf512e916ed415cdb013c1651/Notas%2520-%2520Historia%2520del%2520dise%25C3%25B1o.md), fueron convertidas a esta presentación.
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/NB98YYyrEzdgYU" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
