@@ -1,3 +1,7 @@
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 # Notas digitales
 
 En esta guía te enseñara como tomar notas digitales con texto, formato, links, imágenes o gráficas, bloques de código, tablas y ecuaciones de manera efectiva, como transformar tus notas a Word, PDF , publicar tus notas o tareas en una pagina web y en como transformar tus notas a una presentación estilo PowerPoint automáticamente. Todo esto desde cualquier dispositivo, sea laptop, Smartphone, tablet, PC, Mac o Linux.
