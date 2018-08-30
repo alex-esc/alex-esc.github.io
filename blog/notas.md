@@ -8,6 +8,8 @@ Recomiendo esta guía a estudiantes principalmente.
 
 ## Notas simples y flexibles
 
+Así se ve el respaldo de mis notas en mi pagina web:
+
 ![](https://i.imgur.com/reoV9VD.png)
 
 La pregunta numero uno que me hacen mis compañeros es ¿como haces que tus notas se vean así? la respuesta corta es _Markdown_. La respuesta larga es... un poco mas complicada, hay 3 partes principales de mi sistema de notas: El texto original, Documento en PDF y un respaldo en mi pagina web. Esta guía te enseñara como duplicar mi estilo de notas.
@@ -81,6 +83,8 @@ Mas adelante veremos como escribir ecuaciones en markdown, pero por ahora aquí 
 Entonces para usar markdown solo abre un editor de texto, el que tu quieras y escribe siguiendo estas reglas, no olvides guardar tu documento con la terminación '.md' para guardarlo como archivo markdown. Archivo -> Guardar como -> escribe el nombre del documento y agrega '.md' al final.
 
 ## Grandes ventajas de markdown
+
+![](https://i.imgur.com/sDO7Pp9.png)
 
 Bueno ahora escribes tus notas con hastags, asteriscos y brackets por doquier ¿pero esto de que me sirve? bueno si te as fijado que aun no hay imágenes ni negritas aun es por que markdown tiene que convertirse de texto a algo mas, algo como un PDF o documento de word, si no lo transformas no sera mas que texto simple, pero esto el la primera gran ventaja de md: como solo es texto, lo puedes editar con cualquier programa en cualquier aparato: Puedes usar block de notas en tu PC y continuar tomando notas en tu celular y fácilmente agregar las nuevas notas que tomaste en tu teléfono a tu computadora.
 
