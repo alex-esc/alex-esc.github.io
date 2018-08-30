@@ -156,7 +156,7 @@ Veremos como transformar a Powerpoint mas adelante...
 
 <!-- Recuerda corregir ortografía -->
 
-Para escribir un comentario, primero escribe '\<!--' luego tu comentario, cuando termines tu comentario escribe '\-->'. Un comentario es texto que no se mostrara cunado el archivo markdown sea transformado a word, PDF o cualquier otro formato.
+Para escribir un comentario, primero escribe '\<\!\-\-' luego tu comentario, cuando termines tu comentario escribe '\-\-\>'. Un comentario es texto que no se mostrara cunado el archivo markdown sea transformado a word, PDF o cualquier otro formato.
 
 	### Comentarios
 
