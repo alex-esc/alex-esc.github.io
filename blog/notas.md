@@ -134,7 +134,9 @@ Si quieres convertir de Markdown a HTML (el formato de las paginas web) copia y 
 	
 Recuerda cambiar "EL_NOMBRE_DE_TU_ARCHIVO" por el nombre de tu archivo y "EL_NUEVO_NOMBRE_DE_TU_ARCHIVO" por el nombre del archivo HTML que vas a producir. Para publicar este acrhivo en internet necesitas una pagina web que te permita subir los archivos que quieras como [neocities](https://neocities.org/) y [github pages](https://pages.github.com/), para agregar estilo a tu pagina lee [esta guía](https://jblevins.org/log/custom-css).
 
+cambia '-f markdown' por '-s --katex' si necesitas usar matemáticas, también puedes usar --mathjax pero yo prefiero katex.
 
+	pandoc math.text -s --katex   -o mathKaTeX.html
 
 #### Transformar a un documento de word
 
@@ -145,6 +147,7 @@ Si quieres convertir de Markdown a docx copia y pega lo siguiente en la terminal
 Recuerda cambiar "EL_NOMBRE_DE_TU_ARCHIVO" por el nombre de tu archivo y "EL_NUEVO_NOMBRE_DE_TU_ARCHIVO" por el nombre del archivo de word que vas a producir.
 
 Veremos como transformar a Powerpoint mas adelante...
+
 
 
 ## Markdown avanzado
