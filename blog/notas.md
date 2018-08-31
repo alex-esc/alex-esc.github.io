@@ -2,7 +2,7 @@
 
 En esta guía te enseñara como tomar notas digitales con texto, formato, links, imágenes o gráficas, bloques de código, tablas y ecuaciones de manera efectiva, como transformar tus notas a Word, PDF , publicar tus notas o tareas en una pagina web y en como transformar tus notas a una presentación estilo PowerPoint automáticamente. Todo esto desde cualquier dispositivo, sea laptop, Smartphone, tablet, PC, Mac o Linux.
 
-> Este método es gratis y solo necesitaras una computadora para seguir esta guía, si quieres seguir este método desde tu tableta o teléfono Apple necesitaras ademas una computadora de cualquier tipo, ya que una herramienta que necesitaremos llamada pandoc no se encuentra en iphone o ipad, pero si en Mac, PC ,Linux y Android.
+> Este método es gratis, **necesitas una computadora (PC, Mac, Linux) como mínimo, puedes hacer tus documentos en tu teléfono pero no transformarlos a PDF, docx etc hasta pasarlos a tu computadora**, las transformaciones solo se pueden hacer en una computadora por que un programa llamado pandoc solo corre en pc's, Termux podría funcionar para android pero no esta oficialmente soportado.
 
 Recomiendo esta guía a estudiantes principalmente.
 
