@@ -1,3 +1,5 @@
+
+
 # Notas digitales
 
 En esta guía te enseñara como tomar notas digitales con texto, formato, links, imágenes o gráficas, bloques de código, tablas y ecuaciones de manera efectiva, como transformar tus notas a Word, PDF , publicar tus notas o tareas en una pagina web y en como transformar tus notas a una presentación estilo PowerPoint automáticamente. Todo esto desde cualquier dispositivo, sea laptop, Smartphone, tablet, PC, Mac o Linux.
@@ -5,6 +7,46 @@ En esta guía te enseñara como tomar notas digitales con texto, formato, links,
 > Este método es gratis, **necesitas una computadora (PC, Mac, Linux) como mínimo, puedes hacer tus documentos en tu teléfono pero no transformarlos a PDF, docx etc hasta pasarlos a tu computadora**, las transformaciones solo se pueden hacer en una computadora por que un programa llamado pandoc solo corre en pc's, Termux podría funcionar para android pero no esta oficialmente soportado.
 
 Recomiendo esta guía a estudiantes principalmente.
+
+###### Indice
+
+* Como usar Markdown
+	* Grandes ventajas de markdown
+	* Como transformar tus documentos usando Pandoc
+		* Paso uno, instala Pandoc
+		* Paso dos, localiza tu documento a transformar
+		* Ultimo paso, transforma tu documento
+			* Transformar a PDF
+			* Transformar a una pagina web
+			* Transformar a un documento de word
+* Markdown avanzado
+	* Comentarios
+	* Escribir ejemplos de código
+	* Citas
+	* Hacer un PDF con tabla de contenidos
+	* Forzar PDF a saltar a siguiente pagina
+	* Agregar espacio en blanco entre párrafos
+	* Como escribir símbolos especiales
+	* Escribir ecuaciones y modo matemáticas
+		* Matemáticas entre texto
+		* Matemáticas por si solas
+		* Formato de matemáticas de LaTeX
+		* Números, sumas, restas y multiplicaciones
+		* Divisiones	
+		* Exponentes y subindices
+		* Múltiples ecuaciones alineadas 
+			* Mas información de formato LaTeX
+			* Mas información de Markdown
+	* Transformar tus notas a una presentación
+* Pandoc avanzado
+	* Transformar sin especificar formatos
+	* Portadas automáticas
+	* Presentacion estilo LaTeX / Beamer
+	* Presentaciones Reveal.js
+	* Especificar formatos
+	* Mas información de Pandoc
+* Ejemplo
+* En resumen
 
 ## Notas simples y flexibles
 
