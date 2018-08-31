@@ -641,4 +641,50 @@ Esto me genera un respaldo en linea de mis notas, pero si quiero el archivo en p
 
 El siguiente PDF es generado:
 
-![\*Screenshot de mis notas completas, el pdf real de esta conversión seria ligeramente diferente](https://i.imgur.com/scVPZrD.png)
+![](https://i.imgur.com/scVPZrD.png)
+
+> \*Screenshot de mis notas completas, el pdf real de esta conversión seria ligeramente diferente
+
+## En resumen
+
+un documento en markdown como:
+
+	% titulo
+	% autor
+	% fecha
+
+	# Este es mi documento en markdown
+
+	Este es el **contenido** con matemáticas $x=1$
+
+pasa por pandoc 2 veses, primero con las opciones:
+
+	pandoc midocumento.md -f markdown -s --katex -o midocumento.html
+
+y produce:
+
+		<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta charset="utf-8" /><meta name="generator" content="pandoc" /><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" /><meta name="author" content="autor" />
+	  <title>titulo</title>
+	  <style type="text/css">code{white-space: pre-wrap;}span.smallcaps{font-variant: small-caps;}span.underline{text-decoration: underline;}div.column{display: inline-block; vertical-align: top; width: 50%;}</style><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/contrib/auto-render.min.js"></script><script>document.addEventListener("DOMContentLoaded", function() {renderMathInElement(document.body);});</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" /><!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+	</head>
+	<body>
+	<header>
+	<h1 class="title">titulo</h1>
+	<p class="author">autor</p>
+	<p class="date">fecha</p>
+	</header>
+	<h1 id="este-es-mi-documento-en-markdown">Este es mi documento en markdown</h1>
+	<p>Este es el <strong>contenido</strong> con matemáticas <span class="math inline">\(x=1\)</span></p>
+	</body>
+	</html>
+
+	
+Agrego mi css después de <meta charset="utf-8" />
+
+  <link rel="stylesheet" href="css/modest.css">
+
+Genera esta pagina:
+
+![](https://i.imgur.com/iB4gthN.png)
+
