@@ -680,9 +680,9 @@ y produce:
 	</html>
 
 	
-Agrego mi css después de <meta charset="utf-8" />
+Agrego mi css después de \<meta charset="utf-8" />
 
-  <link rel="stylesheet" href="css/modest.css">
+	<link rel="stylesheet" href="css/modest.css">
 
 Genera esta pagina:
 
