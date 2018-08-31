@@ -56,7 +56,7 @@ Mas adelante veremos como escribir ecuaciones en markdown, pero por ahora aquí 
 
 	######## solo puedes hacer 8 sub niveles de titulo
 
-	Esto es texto normal, pero **esto esta en negritas** y _esto en itálicas.
+	Esto es texto normal, pero **esto esta en negritas** y _esto en itálicas_.
 
 	Deja una linea entre renglones para iniciar un nuevo párrafo.
 
@@ -88,9 +88,9 @@ Entonces para usar markdown solo abre un editor de texto, el que tu quieras y es
 
 Bueno ahora escribes tus notas con hastags, asteriscos y brackets por doquier ¿pero esto de que me sirve? bueno si te as fijado que aun no hay imágenes ni negritas aun es por que markdown tiene que convertirse de texto a algo mas, algo como un PDF o documento de word, si no lo transformas no sera mas que texto simple, pero esto el la primera gran ventaja de md: como solo es texto, lo puedes editar con cualquier programa en cualquier aparato: Puedes usar block de notas en tu PC y continuar tomando notas en tu celular y fácilmente agregar las nuevas notas que tomaste en tu teléfono a tu computadora.
 
-En otras palabras _Markdown te permite hacer PDFs, documentos de word y paginas web en cualquier dispositivo_, puedes usar dropbox, drive o icloud para sincronizar las notas de tu smartphone y tu computadora. Como un extra, también puedes transformar tus documentos de markdown a una presentación de Powerpoint, esto te ahorrara mucho tiempo cuando tengas que hacer un escrito sobre un tema visto en clase y una presentación ya que el escrito sera una versión extendida de tus notas y el Powerpoint se generara de tus notas, mas adelante veremos este tema, por ahora lo básico.
+En otras palabras _Markdown te permite hacer PDFs, documentos de word y paginas web en cualquier dispositivo_, puedes usar dropbox, drive o icloud para sincronizar las notas de tu smartphone y tu computadora. Como un extra, también puedes transformar tus documentos de markdown a una presentación de Powerpoint, esto te ahorrara mucho tiempo cuando tengas que hacer un escrito sobre un tema visto en clase y una presentación ya que el escrito sera una versión extendida de tus notas, el Powerpoint se generara de tus notas, mas adelante veremos este tema, por ahora lo básico.
 
-Cuando termines tus notas y quieras convertirlas a PDF, word o pagina web solo abre la carpeta con tus notas y usaras un programa llamado **pandoc** para hacer la trasformación.
+Cuando termines tus notas y quieras convertirlas a PDF, word o pagina web solo abre la carpeta con tus notas, usaras un programa llamado **pandoc** para hacer la trasformación.
 
 ## Como transformar tus documentos usando Pandoc
 
@@ -108,7 +108,7 @@ Si tienes problemas la pagina oficial de Pandoc esta [aquí](https://pandoc.org/
 
 Abre la carpeta donde guardas tu documento, recuerda que termina en '.md', luego abre la terminal en esa carpeta:
 
-* En Windows has click derecho en el espacio en blanco y preciosa la tecla shift al mismo tiempo y selecciona a abrir Powershell aquí. ([mas info](https://www.addictivetips.com/windows-tips/open-powershell-in-a-specific-location/))
+* En Windows has click derecho en el espacio en blanco y preciosa la tecla shift al mismo tiempo, luego selecciona a abrir Powershell aquí. ([mas info](https://www.addictivetips.com/windows-tips/open-powershell-in-a-specific-location/))
 
 * En Mac ve a preferencias , teclado, atajos, servicios y activa New Terminal at Folder, luego de esto podrás hacer click derecho en cualquier folder y en servicios habrá una opción para abrir nueva terminal aquí. ([mas info](https://lifehacker.com/launch-an-os-x-terminal-window-from-a-specific-folder-1466745514))
 
@@ -211,15 +211,23 @@ Cita con '>':
 
 #### Como escribir símbolos especiales
 
-¿Que tal si quieres escribir un símbolo que se usa para cambiar el formato? solo tienes que agregar '\' al principio. Si quieres escribir caracteres especiales como delta o pi, tienes que buscar como escribirlos en _LaTeX_, LaTeX es otro formato como markdown, pero LaTeX es mas complicado por eso solo lo usaremos muy poco.
+¿Que tal si quieres escribir un símbolo que se usa para cambiar el formato? solo tienes que agregar '\\' al principio. Si quieres escribir caracteres especiales como delta o pi, tienes que buscar como escribirlos en _LaTeX_, LaTeX es otro formato como markdown, pero LaTeX es mas complicado por eso solo lo usaremos muy poco.
 
-Por ejemplo para escribir _el numero pi_ usaremos \\pi, para delta usaremos '\\Delta' etc, solo busca en Internet como escribir el símbolo que deseas en LaTeX.
+Lo único que tienes que saber de LaTeX es:
 
-$\pi$ y $\Delta$
+* Como escribir símbolos o caracteres especiales
+* Sintaxis de matemáticas
+* Modo de ecuaciones alineadas
+
+Veremos cada punto en esta guía, primero caracteres especiales: Por ejemplo para escribir _el numero pi_ usaremos \\pi, para delta usaremos '\\Delta' etc, solo busca en Internet como escribir el símbolo que deseas en LaTeX.
+
+Así se escriben los símbolos $\pi$ y $\Delta$ en _LaTeX_.
+
+	Así se escriben los símbolos $\pi$ y $\Delta$ en _LaTeX_.
 
 #### Escribir ecuaciones y modo matemáticas
 
-Para escribir matemáticas primero debemos entrar en 'math mode' , esto es simple, para activar este modo usaremos '$'. Si quieres insertar ecuaciones entre texto escribe tu ecuación entre símbolos de dolar: 
+Para escribir matemáticas primero debemos entrar en 'math mode' , esto es simple, para activar este modo usaremos '$' , por eso el ejemplo de arriba tiene símbolos de dolar alrededor de pi y Delta, todos los símbolos escritos en LaTeX necesitan estar en mathmode, hay dos opciones para mathmode: matemáticas entre texto y matemáticas por si solas. Si quieres insertar ecuaciones entre texto escribe tu ecuación entre símbolos de dolar: 
 
 ##### Matemáticas entre texto
 
@@ -255,33 +263,6 @@ E = MC^2
 $$ 
 
 Forma parte de la teoría de la relatividad, conocida como Equivalencia entre masa y energía.
-
-
-##### Múltiples ecuaciones alineadas 
-
-Para escribir procesos matemáticos necesitas usar el código de align de LaTeX, primero inicias el modo align, luego escribes tu ecuación usando LaTeX, escribe un '&' donde quieres alinear tus ecuaciones, escribir dos '\' oprimir enter y escribir cuantas ecuaciones necesites, la ultima ecuación no debe tener '\\' finalmente debes terminar el modo align, Por ejemplo:
-
-	$$
-	\begin{align*}
-	y(x) &= x\\
-	y(x) &= x^2\\
-	y(x) &= e^x\\
-	y(x) &= sen(x)
-	\end{align*}
-	$$
-
-Recuerda que tienes que entrar a modo matemáticas con símbolos de dolar.
-	
-> Produce esto:
-
-$$
-\begin{align*}
-y(x) &= x\\
-y(x) &= x^2\\
-y(x) &= e^x\\
-y(x) &= sen(x)
-\end{align*}
-$$
 
 ##### Formato de matemáticas de LaTeX
 
@@ -329,6 +310,35 @@ $$
 x^{2 \alpha} - z^w = y_{ij} + y_{ij} - z_w
 $$
 
+Recuerda que puedes incluir caracteres especiales con LaTeX, por eso el ejemplo usa '\\alpha'.
+
+###### Múltiples ecuaciones alineadas 
+
+Para escribir procesos matemáticos necesitas usar el código de align de LaTeX, primero inicias el modo align, luego escribes tu ecuación usando LaTeX, escribe un '&' donde quieres alinear tus ecuaciones, escribir dos '\\' oprimir enter y escribir cuantas ecuaciones necesites, la ultima ecuación no debe tener '\\\\' finalmente debes terminar el modo align, Por ejemplo:
+
+	$$
+	\begin{align*}
+	y(x) &= x\\
+	y(x) &= x^2\\
+	y(x) &= e^x\\
+	y(x) &= sen(x)
+	\end{align*}
+	$$
+
+Recuerda que tienes que entrar a modo matemáticas con símbolos de dolar. En el ejemplo usamos el modo 'align*' porque el modo 'align' también numera las ecuaciones, mientras que el modo 'align*' no las enumera.
+	
+> Produce esto:
+
+$$
+\begin{align*}
+y(x) &= x\\
+y(x) &= x^2\\
+y(x) &= e^x\\
+y(x) &= sen(x)
+\end{align*}
+$$
+
+
 ###### Mas información de formato LaTeX
 
 Guías de matemáticas en LaTeX (Links)
@@ -371,7 +381,7 @@ Mas detalles en el link de arriba.
 
 ### Transformar tus notas a una presentación
 
-Para hacer presentaciones necesitas agregar separaciones entre diapositivas, para hacer esto agrega '---' para iniciar la siguiente diapositiva.
+Para hacer presentaciones necesitas agregar separaciones entre diapositivas, para hacer esto agrega '\-\-\-' para iniciar la siguiente diapositiva.
 
 > Esto genera:
 
@@ -410,7 +420,7 @@ La respuesta esta en pandoc, el manual completo de pandoc esta [aqui](http://pan
 
 ### Especificar formatos
 
-usa -f, que significa 'from' y -t que significa 'to'
+usa -f, que significa 'from' y -t que significa 'to' en ingles.
 
 	pandoc -f markdown -t DocumentName.docx
 	
@@ -450,7 +460,7 @@ LaTeX también puede hacer presentaciones, para esto usa beamer:
 
 	pandoc -t beamer habits.txt -o habits.pdf
 	
-Las diapositivas también se separan con '---'.
+Las diapositivas también se separan con '\-\-\-'.
 
 ### Presentaciones Reveal.js
 
@@ -458,7 +468,7 @@ Reveal.js es mi metodo favorito de hacer presentaciones, es el mas profecional y
 
 	pandoc -t revealjs -s habits.txt -o habits.html
 
-Las diapositivas también se separan con '---'. Las presentaciones revealjs se pueden importar y editar en [slides.com](https://slides.com/).
+Las diapositivas también se separan con '\-\-\-'. Las presentaciones revealjs se pueden importar y editar en [slides.com](https://slides.com/).
 
 ### Mas información de Pandoc
 
