@@ -688,3 +688,10 @@ Genera esta pagina:
 
 ![](https://i.imgur.com/iB4gthN.png)
 
+La segunda ves que pasa por pandoc, uso:
+
+	pandoc midocumento.md -f markdown -o midocumento.pdf
+	
+Y me produce este PDF:
+
+![]()
