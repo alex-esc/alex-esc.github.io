@@ -497,43 +497,148 @@ Las diapositivas también se separan con '\-\-\-'. Las presentaciones revealjs s
 Esta es una fracción de mis notas de matemáticas:
 
 
-# Integrales y derivadas
+	% **Libreta - Matemáticas**
+	% Semestre Agosto - Diciembre 2018
+	% Alejandro Escalante
 
-La derivadas son una relación de diferencia de cambio de una curva.
+	# Integrales y derivadas
 
-$$
-pendiente = \frac{\Delta y}{\Delta x}
-$$
+	La derivadas son una relación de diferencia de cambio de una curva.
 
-Las integrales son la reversa de integrales, una buena forma de visualizar integrales es pensando en el área debajo de la curva.
+	$$
+	pendiente = \frac{\Delta y}{\Delta x}
+	$$
 
-![Curva en rojo y área en gris](https://matplotlib.org/1.4.2/_images/integral_demo.png)
+	Las integrales son la reversa de integrales, una buena forma de visualizar integrales es pensando en el área debajo de la curva.
 
-\pagebreak
+	![Curva en rojo y área en gris](https://matplotlib.org/1.4.2/_images/integral_demo.png)
 
-**Formulas de derivadas**
+	\pagebreak
 
-_basica:_
+	**Formulas de derivadas**
+
+	_basica:_
 
 
-$$
-x^n = nx^{n-1}
-$$
+	$$
+	x^n = nx^{n-1}
+	$$
 
-_Casos comunes:_
+	_Casos comunes:_
 
-|  |  |  |
-|--|--|--|
-| $\frac{d}{dx}(c) = 0$ | $\frac{d}{dx}(x^n) = nx^{n-1}$ | $\frac{d}{dx}(e^x) = e^x$ |
-| $(cf)' = cf'$ | $(f + g)' = f' + g'$ | $(f - g)' = f' - g'$ |
-| $(fg)' = fg' + gf'$ | $\left( \frac{f}{g} \right) ' = \frac{gf'+fg'}{g^2}$ |  |
+	|  |  |  |
+	|--|--|--|
+	| $\frac{d}{dx}(c) = 0$ | $\frac{d}{dx}(x^n) = nx^{n-1}$ | $\frac{d}{dx}(e^x) = e^x$ |
+	| $(cf)' = cf'$ | $(f + g)' = f' + g'$ | $(f - g)' = f' - g'$ |
+	| $(fg)' = fg' + gf'$ | $\left( \frac{f}{g} \right) ' = \frac{gf'+fg'}{g^2}$ |  |
 
-_funciones trigonométricas:_
+	_funciones trigonométricas:_
 
-|  |  |  |
-|--|--|--|
-| $\frac{d}{dx}(sen x) = cos x$ | $\frac{d}{dx}(cos x) = -sen x$ | $\frac{d}{dx}(tan x) = sec^2 x$ |
-| $\frac{d}{dx}(csc x) = -csc x cot x$ | $\frac{d}{dx}(sec x) = sec x tan x$ | $\frac{d}{dx}(cot x) = -csc^2x$ |
+	|  |  |  |
+	|--|--|--|
+	| $\frac{d}{dx}(sen x) = cos x$ | $\frac{d}{dx}(cos x) = -sen x$ | $\frac{d}{dx}(tan x) = sec^2 x$ |
+	| $\frac{d}{dx}(csc x) = -csc x cot x$ | $\frac{d}{dx}(sec x) = sec x tan x$ | $\frac{d}{dx}(cot x) = -csc^2x$ |	
+
 	
+Si lo transformo a HTML con pandoc usando kaktex con el comando:
 
+	pandoc Notas_Matemáticas.md -s --katex   -o mate-notas-web.html
+	
+Pandoc genera el siguiente documento html:
 
+	<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+	<head>
+	  <meta charset="utf-8" />
+	  <meta name="generator" content="pandoc" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+	  <meta name="author" content="Semestre Agosto - Diciembre 2018" />
+	  <title>Libreta - Matemáticas</title>
+	  <style type="text/css">
+		  code{white-space: pre-wrap;}
+		  span.smallcaps{font-variant: small-caps;}
+		  span.underline{text-decoration: underline;}
+		  div.column{display: inline-block; vertical-align: top; width: 50%;}
+	  </style>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/contrib/auto-render.min.js"></script><script>document.addEventListener("DOMContentLoaded", function() {
+		renderMathInElement(document.body);
+	  });</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+	  <!--[if lt IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+	  <![endif]-->
+	</head>
+	<body>
+	<header>
+	<h1 class="title"><strong>Libreta - Matemáticas</strong></h1>
+	<p class="author">Semestre Agosto - Diciembre 2018</p>
+	<p class="date">Alejandro Escalante</p>
+	</header>
+	<h1 id="integrales-y-derivadas">Integrales y derivadas</h1>
+	<p>La derivadas son una relación de diferencia de cambio de una curva.</p>
+	<p><span class="math display">\[
+	pendiente = \frac{\Delta y}{\Delta x}
+	\]</span></p>
+	<p>Las integrales son la reversa de integrales, una buena forma de visualizar integrales es pensando en el área debajo de la curva.</p>
+	<figure>
+	<img src="https://matplotlib.org/1.4.2/_images/integral_demo.png" alt="Curva en rojo y área en gris" /><figcaption>Curva en rojo y área en gris</figcaption>
+	</figure>
+
+	<p><strong>Formulas de derivadas</strong></p>
+	<p><em>basica:</em></p>
+	<p><span class="math display">\[
+	x^n = nx^{n-1}
+	\]</span></p>
+	<p><em>Casos comunes:</em></p>
+	<table>
+	<tbody>
+	<tr class="odd">
+	<td><span class="math inline">\(\frac{d}{dx}(c) = 0\)</span></td>
+	<td><span class="math inline">\(\frac{d}{dx}(x^n) = nx^{n-1}\)</span></td>
+	<td><span class="math inline">\(\frac{d}{dx}(e^x) = e^x\)</span></td>
+	</tr>
+	<tr class="even">
+	<td><span class="math inline">\((cf)&#39; = cf&#39;\)</span></td>
+	<td><span class="math inline">\((f + g)&#39; = f&#39; + g&#39;\)</span></td>
+	<td><span class="math inline">\((f - g)&#39; = f&#39; - g&#39;\)</span></td>
+	</tr>
+	<tr class="odd">
+	<td><span class="math inline">\((fg)&#39; = fg&#39; + gf&#39;\)</span></td>
+	<td><span class="math inline">\(\left( \frac{f}{g} \right) &#39; = \frac{gf&#39;+fg&#39;}{g^2}\)</span></td>
+	<td></td>
+	</tr>
+	</tbody>
+	</table>
+	<p><em>funciones trigonométricas:</em></p>
+	<table>
+	<colgroup>
+	<col style="width: 33%" />
+	<col style="width: 33%" />
+	<col style="width: 33%" />
+	</colgroup>
+	<tbody>
+	<tr class="odd">
+	<td><span class="math inline">\(\frac{d}{dx}(sen x) = cos x\)</span></td>
+	<td><span class="math inline">\(\frac{d}{dx}(cos x) = -sen x\)</span></td>
+	<td><span class="math inline">\(\frac{d}{dx}(tan x) = sec^2 x\)</span></td>
+	</tr>
+	<tr class="even">
+	<td><span class="math inline">\(\frac{d}{dx}(csc x) = -csc x cot x\)</span></td>
+	<td><span class="math inline">\(\frac{d}{dx}(sec x) = sec x tan x\)</span></td>
+	<td><span class="math inline">\(\frac{d}{dx}(cot x) = -csc^2x\)</span></td>
+	</tr>
+	</tbody>
+	</table>
+	</body>
+	</html>
+
+Aunque no tengo la menor idea de como leer html lo subiré a [mi pagina](alex-esc.neocities.org) y agrego el link a mi css de estilo markdown y me produce:
+
+![](https://i.imgur.com/reoV9VD.png)
+
+Esto me genera un respaldo en linea de mis notas, pero si quiero el archivo en pdf entonces uso estas instrucciones en pandoc:
+
+	pandoc Notas_Matemáticas.md -f markdown -o mate-notas.pdf
+
+El siguiente PDF es generado:
+
+![\*Screenshot de mis notas completas, el pdf real de esta conversión seria ligeramente diferente](https://i.imgur.com/scVPZrD.png)
