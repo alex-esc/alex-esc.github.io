@@ -202,6 +202,17 @@ Life is like riding a bicycle. To keep your balance, you must keep moving.
 
 - Albert Einstein
 
+##### Hacer un PDF con tabla de contenidos
+
+escribe '\\tableofcontents' al principio de tu documento
+
+##### Forzar PDF a saltar a siguiente pagina
+
+Agrega '\\pagebreak' entre párrafos para asegurarte que se salte una pagina después de un párrafo.
+
+##### Agregar espacio en blanco entre párrafos
+
+usa el ambiente '\\vspace{}' para agregar espacio vertical entre párrafos, por ejemplo '\\vspace{5cm}' se salta 5 centímetros, esto es util para hacer paginas de portada simples.
 
 Cita con '>':
 
@@ -325,7 +336,7 @@ Para escribir procesos matemáticos necesitas usar el código de align de LaTeX,
 	\end{align*}
 	$$
 
-Recuerda que tienes que entrar a modo matemáticas con símbolos de dolar. En el ejemplo usamos el modo 'align*' porque el modo 'align' también numera las ecuaciones, mientras que el modo 'align*' no las enumera.
+
 	
 > Produce esto:
 
@@ -338,6 +349,7 @@ y(x) &= sen(x)
 \end{align*}
 $$
 
+Recuerda que tienes que entrar a modo matemáticas con símbolos de dolar. En el ejemplo usamos el modo 'align\*' porque el modo 'align' también numera las ecuaciones, mientras que el modo 'align\*' no las enumera.
 
 ###### Mas información de formato LaTeX
 
@@ -404,7 +416,7 @@ Para hacer presentaciones necesitas agregar separaciones entre diapositivas, par
 
 ![](https://i.imgur.com/03PEcSh.png)
 
-Como puedes hacer presentaciones de esta forma, yo recomiendo que si tienes que presentar algún tema del que tienes apuntes y ademas debes entregar un reporte entonces dupliques tus notas, en la copia elimina todo menos el tema de tus notas, agrega '---' para separar los temas, luego elimina parte del texto para que halla poca información por diapositiva, finalmente duplica otra ves tus notas y redacta un poco mas para hacer el reporte, esto te ahorra re-escribir las mismas ideas 3 veces, solo tienes que expandir el texto en el reporte y recortar información en la presentación.
+Como puedes hacer presentaciones de esta forma, yo recomiendo que si tienes que presentar algún tema del que tienes apuntes y ademas debes entregar un reporte entonces dupliques tus notas, en la copia elimina todo menos el tema de tus notas, agrega '\-\-\-' para separar los temas, luego elimina parte del texto para que halla poca información por diapositiva, finalmente duplica otra ves tus notas y redacta un poco mas para hacer el reporte, esto te ahorra re-escribir las mismas ideas 3 veces, solo tienes que expandir el texto en el reporte y recortar información en la presentación.
 
 Si quieres convertir de Markdown a PPTX(el formato de Powerpoint) copia y pega lo siguiente en la terminal.
 
@@ -476,5 +488,50 @@ Las diapositivas también se separan con '\-\-\-'. Las presentaciones revealjs s
 * [Foro de ayuda](https://stackoverflow.com/search?q=pandoc)
 * [Foro de ayuda con LaTeX](https://tex.stackexchange.com/)
 * [Ejemplos](http://pandoc.org/demos.html)
+
+
+## Ejemplo
+
+Esta es una fracción de mis notas de matemáticas:
+
+
+# Integrales y derivadas
+
+La derivadas son una relación de diferencia de cambio de una curva.
+
+$$
+pendiente = \frac{\Delta y}{\Delta x}
+$$
+
+Las integrales son la reversa de integrales, una buena forma de visualizar integrales es pensando en el área debajo de la curva.
+
+![Curva en rojo y área en gris](https://matplotlib.org/1.4.2/_images/integral_demo.png)
+
+\pagebreak
+
+**Formulas de derivadas**
+
+_basica:_
+
+
+$$
+x^n = nx^{n-1}
+$$
+
+_Casos comunes:_
+
+|  |  |  |
+|--|--|--|
+| $\frac{d}{dx}(c) = 0$ | $\frac{d}{dx}(x^n) = nx^{n-1}$ | $\frac{d}{dx}(e^x) = e^x$ |
+| $(cf)' = cf'$ | $(f + g)' = f' + g'$ | $(f - g)' = f' - g'$ |
+| $(fg)' = fg' + gf'$ | $\left( \frac{f}{g} \right) ' = \frac{gf'+fg'}{g^2}$ |  |
+
+_funciones trigonométricas:_
+
+|  |  |  |
+|--|--|--|
+| $\frac{d}{dx}(sen x) = cos x$ | $\frac{d}{dx}(cos x) = -sen x$ | $\frac{d}{dx}(tan x) = sec^2 x$ |
+| $\frac{d}{dx}(csc x) = -csc x cot x$ | $\frac{d}{dx}(sec x) = sec x tan x$ | $\frac{d}{dx}(cot x) = -csc^2x$ |
+	
 
 
