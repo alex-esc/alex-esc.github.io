@@ -202,23 +202,25 @@ Life is like riding a bicycle. To keep your balance, you must keep moving.
 
 - Albert Einstein
 
-##### Hacer un PDF con tabla de contenidos
-
-escribe '\\tableofcontents' al principio de tu documento
-
-##### Forzar PDF a saltar a siguiente pagina
-
-Agrega '\\pagebreak' entre párrafos para asegurarte que se salte una pagina después de un párrafo.
-
-##### Agregar espacio en blanco entre párrafos
-
-usa el ambiente '\\vspace{}' para agregar espacio vertical entre párrafos, por ejemplo '\\vspace{5cm}' se salta 5 centímetros, esto es util para hacer paginas de portada simples.
 
 Cita con '>':
 
 > Life is like riding a bicycle. To keep your balance, you must keep moving.
 >
 >  Albert Einstein
+
+#### Hacer un PDF con tabla de contenidos
+
+escribe '\\tableofcontents' al principio de tu documento
+
+#### Forzar PDF a saltar a siguiente pagina
+
+Agrega '\\pagebreak' entre párrafos para asegurarte que se salte una pagina después de un párrafo.
+
+#### Agregar espacio en blanco entre párrafos
+
+usa el ambiente '\\vspace{}' para agregar espacio vertical entre párrafos, por ejemplo '\\vspace{5cm}' se salta 5 centímetros, esto es util para hacer paginas de portada simples.
+
 
 #### Como escribir símbolos especiales
 
