@@ -547,26 +547,7 @@ Si lo transformo a HTML con pandoc usando kaktex con el comando:
 Pandoc genera el siguiente documento html:
 
 	<!DOCTYPE html>
-	<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-	<head>
-	  <meta charset="utf-8" />
-	  <meta name="generator" content="pandoc" />
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-	  <meta name="author" content="Semestre Agosto - Diciembre 2018" />
-	  <title>Libreta - Matemáticas</title>
-	  <style type="text/css">
-		  code{white-space: pre-wrap;}
-		  span.smallcaps{font-variant: small-caps;}
-		  span.underline{text-decoration: underline;}
-		  div.column{display: inline-block; vertical-align: top; width: 50%;}
-	  </style>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/contrib/auto-render.min.js"></script><script>document.addEventListener("DOMContentLoaded", function() {
-		renderMathInElement(document.body);
-	  });</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
-	  <!--[if lt IE 9]>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-	  <![endif]-->
-	</head>
+	<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta charset="utf-8" /><meta name="generator" content="pandoc" /><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" /><meta name="author" content="Semestre Agosto - Diciembre 2018" /><title>Libreta - Matemáticas</title><style type="text/css">	code{white-space: pre-wrap;}	span.smallcaps{font-variant: small-caps;}	span.underline{text-decoration: underline;}	div.column{display: inline-block; vertical-align: top; width: 50%;}</style><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/contrib/auto-render.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {		renderMathInElement(document.body);});</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" /><!--[if lt IE 9]>		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]--></head>
 	<body>
 	<header>
 	<h1 class="title"><strong>Libreta - Matemáticas</strong></h1>
@@ -694,4 +675,5 @@ La segunda ves que pasa por pandoc, uso:
 	
 Y me produce este PDF:
 
-![]()
+![](https://i.imgur.com/gZweNTV.png)
+
