@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Simples y flexibles">
+  <title>Notas digitales</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Notas digitales</h1>
+  <p class="author">Simples y flexibles</p>
+  <p class="date">alex-esc.github.io</p>
+</section>
+
+<section id="notas-digitales-con" class="slide level1">
+<h1>Notas digitales con:</h1>
+<ul>
+<li>texto</li>
+<li>formato</li>
+<li>links</li>
+<li>imágenes o gráficas</li>
+<li>bloques de código</li>
+<li>tablas</li>
+<li>ecuaciones</li>
+</ul>
+<aside class="notes">
+<p>pandoc -s –webtex -t revealjs -s .-slides.md -o slidescool.html</p>
+</aside>
+</section>
+<section id="en-formato" class="slide level1">
+<h1>En formato</h1>
+<ul>
+<li>PDF</li>
+<li>Word</li>
+<li>Pagina web</li>
+<li>Powerpoint</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<p><strong>Gratis</strong></p>
+<p>PC, Mac, Linux + Andoid , ios</p>
+<aside class="notes">
+<p>necesitas una computadora (PC, Mac, Linux) como mínimo, puedes hacer tus documentos en tu teléfono pero no transformarlos a PDF, docx etc hasta pasarlos a tu computadora**, las transformaciones solo se pueden hacer en una computadora por que un programa llamado pandoc solo corre en pc’s, Termux podría funcionar para android pero no esta oficialmente soportado.</p>
+</aside>
+</section>
+<section class="slide level1">
+
+<p>Recomiendo esta guía a estudiantes principalmente.</p>
+</section>
+<section class="slide level1">
+
+<h2 id="notas-simples-y-flexibles">Notas simples y flexibles</h2>
+<aside class="notes">
+<p>Así se ve el respaldo de mis notas en mi pagina web:</p>
+</aside>
+</section>
+<section id="section" class="slide level1" data-background-image="https://i.imgur.com/reoV9VD.png" data-background-size="contain">
+<h1></h1>
+</section>
+<section id="como-haces-que-tus-notas-se-vean-así" class="slide level1">
+<h1>¿como haces que tus notas se vean así?</h1>
+<div class="fragment">
+<p>la respuesta corta es <em>Markdown</em>.</p>
+</div>
+</section>
+<section class="slide level1">
+
+<ul>
+<li>Texto original</li>
+<li>Documento en PDF</li>
+<li>Respaldo en mi pagina web</li>
+</ul>
+<aside class="notes">
+<p>La respuesta larga es… un poco mas complicada, hay 3 partes principales de mi sistema de notas: El texto original, Documento en PDF y un respaldo en mi pagina web. Esta guía te enseñara como duplicar mi estilo de notas.</p>
+</aside>
+</section>
+<section class="slide level1">
+
+<p>Una parte importante de tomar todos tus apuntes digitales es la eliminación de distracciones.</p>
+<div class="fragment">
+<p>No solo me refiero a dejar atrás tu teléfono, me refiero a distracciones dentro del método de tomar notas</p>
+</div>
+</section>
+<section class="slide level1">
+
+<p><del>word, google drive, pages</del></p>
+<div class="fragment">
+<p>Usaremos cualquier editor de texto.</p>
+</div>
+<div class="fragment">
+<p>solo tu y tu teclado.</p>
+<aside class="notes">
+<p>En procesadores de texto como word, google drive o pages cada acción esta escondida debajo de un menu o sub-menu, pasaras una gran cantidad de tiempo haciendo click derecho aqui, arrastrando imágenes y objetos por allá, en lugar de escribiendo el contenido. Por eso en mi método no usaremos word o pages o drive en particular, este método te permite trabajar en cualquier editor de texto sin tener que pelear con menús, solo tu y tu teclado.</p>
+</aside>
+</div>
+</section>
+<section class="slide level1">
+
+<h2 id="como-usar-markdown">Como usar Markdown</h2>
+<pre><code>Archivo.md</code></pre>
+<p>markdown es solo sintaxis. La meta de md es simple: ser fácil de leer en cualquier dispositivo y en cualquier programa.</p>
+</section>
+<section class="slide level1">
+
+<p>Un archivo de markdown se ve asi:</p>
+<pre><code># Integrales y derivadas
+
+La derivadas son una relación de diferencia de cambio de una curva.
+
+Las integrales son la reversa de integrales, una buena forma de visualizar integrales es pensando en el área debajo de la curva.
+
+![Curva en rojo y área en gris](https://matplotlib.org/1.4.2/_images/integral_demo.png)
+
+**Formulas de derivadas**
+
+_basica:_</code></pre>
+</section>
+<section id="texto-símbolos-extra" class="slide level1">
+<h1>Texto + símbolos extra</h1>
+<aside class="notes">
+<p>No es nada especial, solo es texto con símbolos extra, como puedes ver este texto es una parte de la imagen de arriba. Poner un ‘#’ antes de cualquier texto lo convierte en el titulo, poner dos ’*‘alrededor de una o mas palabras las convierte en negritas y poner un’_’ alrededor de otras palabras las convierte en itálicas.</p>
+</aside>
+</section>
+<section id="sintaxis-básica" class="slide level1">
+<h1>sintaxis básica</h1>
+<pre><code># hace títulos y subtitulos
+** hacen negritas
+_ hacen itálicas
+[]() hacen links con texto
+![]() hacen imágenes</code></pre>
+</section>
+<section id="markdown-tutor" class="slide level1">
+<h1>Markdown tutor</h1>
+<p><a href="https://www.markdowntutorial.com/">markdowntutorial.com</a></p>
+</section>
+<section id="guardar-como-markdown" class="slide level1">
+<h1>Guardar como Markdown</h1>
+<pre><code>Archivo.md</code></pre>
+<aside class="notes">
+<p>no olvides guardar tu documento con la terminación ‘.md’ para guardarlo como archivo markdown. Archivo -&gt; Guardar como -&gt; escribe el nombre del documento y agrega ‘.md’ al final.</p>
+</aside>
+</section>
+<section class="slide level1">
+
+<h2 id="grandes-ventajas-de-markdown">Grandes ventajas de markdown</h2>
+</section>
+<section id="section-1" class="slide level1" data-background-image="https://i.imgur.com/UDEb95A.png" data-background-size="contain">
+<h1></h1>
+<aside class="notes">
+<p>mas de 66 opciones en este screenshot!</p>
+</aside>
+</section>
+<section id="section-2" class="slide level1" data-background-image="https://i.imgur.com/sDO7Pp9.png" data-background-size="contain">
+<h1></h1>
+</section>
+<section class="slide level1">
+
+<p>Bueno ahora escribes tus notas con hastags, asteriscos y brackets por doquier ¿pero esto de que me sirve?</p>
+<div class="fragment">
+<p>bueno si te as fijado que aun no hay imágenes ni negritas.</p>
+</div>
+</section>
+<section id="siguiente-paso-conversión" class="slide level1">
+<h1>Siguiente paso, conversión</h1>
+<p>Markdown -&gt; PDF/Word</p>
+<aside class="notes">
+<p>aun es por que markdown tiene que convertirse de texto a algo mas, algo como un PDF o documento de word, si no lo transformas no sera mas que texto simple, pero esto el la primera gran ventaja de md: como solo es texto, lo puedes editar con cualquier programa en cualquier aparato: Puedes usar block de notas en tu PC y continuar tomando notas en tu celular y fácilmente agregar las nuevas notas que tomaste en tu teléfono a tu computadora.</p>
+</aside>
+</section>
+<section class="slide level1">
+
+<p>En otras palabras <em>Markdown te permite hacer PDFs, documentos de word y paginas web en cualquier dispositivo</em></p>
+<div class="fragment">
+<p>Ademas puedes hacer presentaciones automáticamente, en pptx y como esta!</p>
+<aside class="notes">
+<p>puedes usar dropbox, drive o icloud para sincronizar las notas de tu smartphone y tu computadora. Como un extra, también puedes transformar tus documentos de markdown a una presentación de Powerpoint, esto te ahorrara mucho tiempo cuando tengas que hacer un escrito sobre un tema visto en clase y una presentación ya que el escrito sera una versión extendida de tus notas, el Powerpoint se generara de tus notas, mas adelante veremos este tema, por ahora lo básico.</p>
+</aside>
+</div>
+</section>
+<section id="pandoc" class="slide level1">
+<h1>Pandoc</h1>
+<p>Es el programa que usaremos para las transformaciones.</p>
+<p>Para usarlo tendrás que…</p>
+<div class="fragment">
+<p>Usar la terminal de comandos.</p>
+</div>
+</section>
+<section id="section-3" class="slide level1" data-background-image="https://i.giphy.com/media/l46C6sdSa5DVSJnLG/giphy.webp">
+<h1></h1>
+</section>
+<section class="slide level1">
+
+<p>No te preocupes, no necesitas ser un experto, <strong>solo necesitas saber copiar y pegar, eso es todo.</strong></p>
+<aside class="notes">
+<p>Pandoc es una simple herramienta que transforma documentos, una ves que este instalado en tu computadora tendrás que usar la terminal o linea de comandos para hacer la transformación. <strong>Woah woah woah!</strong> ¿dijiste linea de comandos? ¡detente ahí no soy experto en computadoras!</p>
+</aside>
+</section>
+<section class="slide level1">
+
+<h3 id="paso-uno-instala-pandoc">Paso uno, instala Pandoc</h3>
+<p>Guía de instalación de pandoc en <a href="http://www.texts.io/support/0004/">PC</a>, <a href="http://www.texts.io/support/0003/">Mac</a> y <a href="https://pandoc.org/installing.html#linux">linux</a></p>
+<p><a href="https://pandoc.org/installing.html">Manual de instalación oficial</a></p>
+<aside class="notes">
+<p>Si tienes problemas la pagina oficial de Pandoc esta <a href="https://pandoc.org/installing.html">aquí</a></p>
+</aside>
+</section>
+<section class="slide level1">
+
+<h3 id="paso-dos-localiza-tu-documento-a-transformar">Paso dos, localiza tu documento a transformar</h3>
+<p>Abre la carpeta donde guardas tu documento, recuerda que termina en ‘.md’, luego abre la terminal en esa carpeta:</p>
+<ul>
+<li><p>En Windows shift + click derecho en una carpeta –&gt; abrir Powershell aquí. (<a href="https://www.addictivetips.com/windows-tips/open-powershell-in-a-specific-location/">mas info</a>)</p></li>
+<li><p>En Mac ve a preferencias/teclado/atajos/servicios/New Terminal at Folder, luego de esto podrás click derecho –&gt; abrir nueva terminal aquí. (<a href="https://lifehacker.com/launch-an-os-x-terminal-window-from-a-specific-folder-1466745514">mas info</a>)</p></li>
+<li><p>En linux (Ubuntu) preciona Ctrl + Alt + T y pega este texto “sudo apt-get install nautilus-open-terminal” , reinicia tu computadora y has click derecho en cualquier archivo. (<a href="https://www.howtogeek.com/192865/how-to-open-terminal-to-a-specific-folder-in-ubuntus-file-browser/">mas info</a>)</p></li>
+</ul>
+<aside class="notes">
+<p>Obviamente solo tendrás que hacer las configuraciones necesarias la primera ves, luego sigue lo mas fácil, si tienes problemas no olvides que el internet es tu amigo!</p>
+</aside>
+</section>
+<section class="slide level1">
+
+<h3 id="ultimo-paso-transforma-tu-documento">Ultimo paso, transforma tu documento</h3>
+<p>Ahora debes estar en la terminal, el texto debe indicar que estas en la misma carpeta que tu archivo, luego tenemos que decidir a que formato queremos convertir:</p>
+<p>En esta guía veremos como transformar markdown a PDF, word y una pagina web, si quieres transformar a otros formatos <a href="https://pandoc.org/MANUAL.html">aquí</a> esta el manual de pandoc.</p>
+</section>
+<section class="slide level1">
+
+<h4 id="transformar-a-pdf">Transformar a PDF</h4>
+<p>Si quieres convertir de Markdown a PDF copia y pega lo siguiente en la terminal.</p>
+<pre><code>pandoc EL_NOMBRE_DE_TU_ARCHIVO.md -f markdown -o EL_NUEVO_NOMBRE_DE_TU_ARCHIVO.pdf</code></pre>
+<p>Recuerda cambiar “EL_NOMBRE_DE_TU_ARCHIVO” por el nombre de tu archivo y “EL_NUEVO_NOMBRE_DE_TU_ARCHIVO” por el nombre del PDF que vas a producir.</p>
+</section>
+<section class="slide level1">
+
+<h4 id="transformar-a-una-pagina-web">Transformar a una pagina web</h4>
+<p>Si quieres convertir de Markdown a HTML (el formato de las paginas web) copia y pega lo siguiente en la terminal.</p>
+<pre><code>pandoc EL_NOMBRE_DE_TU_ARCHIVO.md -f markdown -o EL_NUEVO_NOMBRE_DE_TU_ARCHIVO.html</code></pre>
+<p>Recuerda cambiar “EL_NOMBRE_DE_TU_ARCHIVO” por el nombre de tu archivo y “EL_NUEVO_NOMBRE_DE_TU_ARCHIVO” por el nombre del archivo HTML que vas a producir. Para publicar este acrhivo en internet necesitas una pagina web que te permita subir los archivos que quieras como <a href="https://neocities.org/">neocities</a> y <a href="https://pages.github.com/">github pages</a>, para agregar estilo a tu pagina lee <a href="https://jblevins.org/log/custom-css">esta guía</a>.</p>
+<p>cambia ‘-f markdown’ por ‘-s –katex’ si necesitas usar matemáticas, también puedes usar –mathjax pero yo prefiero katex.</p>
+<pre><code>pandoc math.text -s --katex   -o mathKaTeX.html</code></pre>
+</section>
+<section class="slide level1">
+
+<h4 id="transformar-a-un-documento-de-word">Transformar a un documento de word</h4>
+<p>Si quieres convertir de Markdown a docx copia y pega lo siguiente en la terminal.</p>
+<pre><code>pandoc EL_NOMBRE_DE_TU_ARCHIVO.md -f markdown -o EL_NUEVO_NOMBRE_DE_TU_ARCHIVO.docx</code></pre>
+<p>Recuerda cambiar “EL_NOMBRE_DE_TU_ARCHIVO” por el nombre de tu archivo y “EL_NUEVO_NOMBRE_DE_TU_ARCHIVO” por el nombre del archivo de word que vas a producir.</p>
+<p>Veremos como transformar a Powerpoint mas adelante…</p>
+</section>
+<section class="slide level1">
+
+<h2 id="markdown-avanzado">Markdown avanzado</h2>
+<p>podemos hacer negritas, títulos , imágenes faltan cosas mas avanzadas como:</p>
+<div class="fragment">
+<ul>
+<li>Comentarios</li>
+<li>Escribir ejemplos de código</li>
+<li>Citas</li>
+<li>Hacer un PDF con tabla de contenidos</li>
+<li>Forzar PDF a saltar a siguiente pagina</li>
+<li>Agregar espacio en blanco entre párrafos</li>
+<li>Como escribir símbolos especiales</li>
+<li>Escribir ecuaciones y modo matemáticas</li>
+</ul>
+</div>
+<div class="fragment">
+<p>Esto no es necesario, si no usas códigos o comentarios puedes saltarte esta parte.</p>
+<aside class="notes">
+<p>Pero si necesitas matemáticas como equitaciones sigue viendo el video!</p>
+</aside>
+</div>
+</section>
+<section class="slide level1">
+
+<h3 id="comentarios">Comentarios</h3>
+<!-- Recuerda corregir ortografía -->
+<p>Para escribir un comentario, primero escribe ‘&lt;!--’ luego tu comentario, cuando termines tu comentario escribe ‘--&gt;’. Un comentario es texto que no se mostrara cunado el archivo markdown sea transformado a word, PDF o cualquier otro formato.</p>
+<pre><code>### Comentarios
+
+&lt;!-- Recuerda corregir ortografía --&gt;
+
+Para escribir un comentario, primero escribe &#39;&lt;!--&#39; luego tu comentario, cuando termines tu comentario escribe &#39;--&gt;&#39;. Un comentario es texto que no se mostrara cunado el archivo markdown sea transformado a word, PDF o cualquier otro formato.</code></pre>
+<p>Por ejemplo, este comentario para recordarme corregir ortografía es invisible, yo recomiendo que copies el código que usaras para transformar el documento con pandoc en un comentario, para recordarte como hacer la transformación.</p>
+</section>
+<section class="slide level1">
+
+<h4 id="escribir-ejemplos-de-código">Escribir ejemplos de código</h4>
+<p>Si necesitas escribir ejemplos de código en tus notas solo tienes que seleccionar el texto del código y presionar tab o tabulador (Es la tecla arriba de bloq mayus)</p>
+<p>Esto es código como texto:</p>
+<p>public class HelloWorld { public static void main(String<a href="#/section-8"></a> args) { System.out.println(“Hello World!”); } }</p>
+<p>Esto es código tabulado:</p>
+<pre><code>public class HelloWorld
+{
+    public static void main(String[] args) {
+        System.out.println(&quot;Hello World!&quot;);
+    }
+}</code></pre>
+</section>
+<section class="slide level1">
+
+<h4 id="citas">Citas</h4>
+<p>Para sobresalir un texto de por ejemplo una cita textual solo agregamos ‘&gt;’ al principio de un párrafo:</p>
+<p>Cita como texto:</p>
+<p>Life is like riding a bicycle. To keep your balance, you must keep moving.</p>
+<ul>
+<li>Albert Einstein</li>
+</ul>
+<p>Cita con ‘&gt;’:</p>
+<blockquote>
+<p>Life is like riding a bicycle. To keep your balance, you must keep moving.</p>
+<p>Albert Einstein</p>
+</blockquote>
+</section>
+<section class="slide level1">
+
+<h4 id="hacer-un-pdf-con-tabla-de-contenidos">Hacer un PDF con tabla de contenidos</h4>
+<p>escribe ‘\tableofcontents’ al principio de tu documento</p>
+</section>
+<section class="slide level1">
+
+<h4 id="forzar-pdf-a-saltar-a-siguiente-pagina">Forzar PDF a saltar a siguiente pagina</h4>
+<p>Agrega ‘\pagebreak’ entre párrafos para asegurarte que se salte una pagina después de un párrafo.</p>
+</section>
+<section class="slide level1">
+
+<h4 id="agregar-espacio-en-blanco-entre-párrafos">Agregar espacio en blanco entre párrafos</h4>
+<p>usa el ambiente ‘\vspace{}’ para agregar espacio vertical entre párrafos, por ejemplo ‘\vspace{5cm}’ se salta 5 centímetros, esto es util para hacer paginas de portada simples.</p>
+</section>
+<section class="slide level1">
+
+<h4 id="como-escribir-símbolos-especiales">Como escribir símbolos especiales</h4>
+<p>¿Que tal si quieres escribir un símbolo que se usa para cambiar el formato? solo tienes que agregar ‘\’ al principio.</p>
+<div class="fragment">
+<p>Si quieres escribir caracteres especiales como delta o pi, tienes que buscar como escribirlos en <em>LaTeX</em>.</p>
+<p>LaTeX es otro formato como markdown, pero LaTeX es mas complicado por eso solo lo usaremos muy poco.</p>
+</div>
+</section>
+<section class="slide level1">
+
+<p>Lo único que tienes que saber de LaTeX es:</p>
+<ul>
+<li>Como escribir símbolos o caracteres especiales</li>
+<li>Sintaxis de matemáticas</li>
+<li>Modo de ecuaciones alineadas</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<p>Así se escriben los símbolos <img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Cpi" alt="\pi" title="\pi" /> y <img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5CDelta" alt="\Delta" title="\Delta" /> en <em>LaTeX</em>.</p>
+<pre><code>Así se escriben los símbolos $\pi$ y $\Delta$ en _LaTeX_.</code></pre>
+</section>
+<section class="slide level1">
+
+<h4 id="escribir-ecuaciones-y-modo-matemáticas">Escribir ecuaciones y modo matemáticas</h4>
+<p><strong>$mathmode$</strong></p>
+<div class="fragment">
+<p>Hay dos opciones para mathmode: matemáticas entre texto y matemáticas por si solas. Si quieres insertar ecuaciones entre texto escribe tu ecuación entre símbolos de dolar:</p>
+<aside class="notes">
+<p>, esto es simple, para activar este modo usaremos ‘$’ , por eso el ejemplo de arriba tiene símbolos de dolar alrededor de pi y Delta, todos los símbolos escritos en LaTeX necesitan estar en mathmode,</p>
+</aside>
+</div>
+</section>
+<section class="slide level1">
+
+<h5 id="matemáticas-entre-texto">Matemáticas entre texto</h5>
+<blockquote>
+<p>Escribir esto:</p>
+</blockquote>
+<pre><code>La famosa formula de Einstein es $E = MC^2$ , Parte de la teoría de la relatividad, conocida como Equivalencia entre masa y energía.</code></pre>
+<blockquote>
+<p>Produce esto:</p>
+</blockquote>
+<p>La famosa formula de Einstein es <img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?E%20%3D%20MC%5E2" alt="E = MC^2" title="E = MC^2" /> , Parte de la teoría de la relatividad, conocida como Equivalencia entre masa y energía.</p>
+</section>
+<section class="slide level1">
+
+<h5 id="matemáticas-por-si-solas">Matemáticas por si solas</h5>
+<p>Para escribir una ecuación por si sola tienes que usar dos $ arriba y abajo de la ecuación, ejemplo:</p>
+<blockquote>
+<p>Escribir esto:</p>
+</blockquote>
+<pre><code>Esta es la famosa formula de Einstein
+
+$$
+E = MC^2
+$$ 
+
+Forma parte de la teoría de la relatividad, conocida como Equivalencia entre masa y energía.</code></pre>
+<blockquote>
+<p>Produce esto:</p>
+</blockquote>
+<p>Esta es la famosa formula de Einstein</p>
+<p><br /><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%0AE%20%3D%20MC%5E2%0A" alt="
+E = MC^2
+" title="
+E = MC^2
+" /><br /></p>
+<p>Forma parte de la teoría de la relatividad, conocida como Equivalencia entre masa y energía.</p>
+</section>
+<section class="slide level1">
+
+<h5 id="formato-de-matemáticas-de-latex">Formato de matemáticas de LaTeX</h5>
+<p>Todas las matemáticas en md se escribes en LaTeX, todas las ecuaciones siguen este formato:</p>
+</section>
+<section class="slide level1">
+
+<h6 id="números-sumas-restas-y-multiplicaciones">Números, sumas, restas y multiplicaciones</h6>
+<p>para escribir números, sumas ,restas y multiplicaciones solo escribelos normalmente, recuerda entrar en modo mate:</p>
+<pre><code>$$
+2 + 2 = 5 - 1 * 1
+$$</code></pre>
+<blockquote>
+<p>Produce esto:</p>
+</blockquote>
+<p><br /><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%0A2%20%2B%202%20%3D%205%20-%201%20%2A%201%0A" alt="
+2 + 2 = 5 - 1 * 1
+" title="
+2 + 2 = 5 - 1 * 1
+" /><br /></p>
+</section>
+<section class="slide level1">
+
+<h6 id="divisiones">Divisiones</h6>
+<p>Usa el código frac, luego entre llaves escribe el numerador y en otras llaves el denominador:</p>
+<pre><code>$$
+\frac{1}{2}
+$$</code></pre>
+<blockquote>
+<p>Produce esto</p>
+</blockquote>
+<p><br /><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%0A%5Cfrac%7B1%7D%7B2%7D%0A" alt="
+\frac{1}{2}
+" title="
+\frac{1}{2}
+" /><br /></p>
+</section>
+<section class="slide level1">
+
+<h6 id="exponentes-y-subindices">Exponentes y subindices</h6>
+<p>Usa el símbolo ‘^’ para elevar solo un numero, usa llaves para elevar varios números, usa el símbolo ’_’ para hacer subindices</p>
+<pre><code>$$
+x^{2 \alpha} - z^w = y_{ij} + y_{ij} - z_w
+$$</code></pre>
+<blockquote>
+<p>Produce esto:</p>
+</blockquote>
+<p><br /><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%0Ax%5E%7B2%20%5Calpha%7D%20-%20z%5Ew%20%3D%20y_%7Bij%7D%20%2B%20y_%7Bij%7D%20-%20z_w%0A" alt="
+x^{2 \alpha} - z^w = y_{ij} + y_{ij} - z_w
+" title="
+x^{2 \alpha} - z^w = y_{ij} + y_{ij} - z_w
+" /><br /></p>
+<p>Recuerda que puedes incluir caracteres especiales con LaTeX, por eso el ejemplo usa ‘\alpha’.</p>
+</section>
+<section class="slide level1">
+
+<h6 id="múltiples-ecuaciones-alineadas">Múltiples ecuaciones alineadas</h6>
+<p>Para escribir procesos matemáticos necesitas usar el código de align de LaTeX, primero inicias el modo align, luego escribes tu ecuación usando LaTeX, escribe un ‘&amp;’ donde quieres alinear tus ecuaciones, escribir dos ‘\’ oprimir enter y escribir cuantas ecuaciones necesites, la ultima ecuación no debe tener ‘\\’ finalmente debes terminar el modo align, Por ejemplo:</p>
+<pre><code>$$
+\begin{align*}
+y(x) &amp;= x\\
+y(x) &amp;= x^2\\
+y(x) &amp;= e^x\\
+y(x) &amp;= sen(x)
+\end{align*}
+$$</code></pre>
+<blockquote>
+<p>Produce esto:</p>
+</blockquote>
+<p><br /><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Balign%2A%7D%0Ay%28x%29%20%26%3D%20x%5C%5C%0Ay%28x%29%20%26%3D%20x%5E2%5C%5C%0Ay%28x%29%20%26%3D%20e%5Ex%5C%5C%0Ay%28x%29%20%26%3D%20sen%28x%29%0A%5Cend%7Balign%2A%7D%0A" alt="
+\begin{align*}
+y(x) &amp;= x\\
+y(x) &amp;= x^2\\
+y(x) &amp;= e^x\\
+y(x) &amp;= sen(x)
+\end{align*}
+" title="
+\begin{align*}
+y(x) &amp;= x\\
+y(x) &amp;= x^2\\
+y(x) &amp;= e^x\\
+y(x) &amp;= sen(x)
+\end{align*}
+" /><br /></p>
+</section>
+<section class="slide level1">
+
+<p>Recuerda que tienes que entrar a modo matemáticas con símbolos de dolar. En el ejemplo usamos el modo ‘align*’ porque el modo ‘align’ también numera las ecuaciones, mientras que el modo ‘align*’ no las enumera.</p>
+</section>
+<section class="slide level1">
+
+<h6 id="mas-información-de-formato-latex">Mas información de formato LaTeX</h6>
+<p>Guías de matemáticas en LaTeX (Links)</p>
+<ul>
+<li><p><a href="https://www.sharelatex.com/learn/Subscripts_and_superscripts">Subscripts and superscripts</a></p></li>
+<li><p><a href="https://www.sharelatex.com/learn/Brackets_and_Parentheses">Brackets and Parentheses</a></p></li>
+<li><p><a href="https://www.sharelatex.com/learn/Fractions_and_Binomials">Fractions and Binomials</a></p></li>
+<li><p><a href="https://www.sharelatex.com/learn/Aligning%20equations%20with%20amsmath">Aligning Equations</a></p></li>
+<li><p><a href="https://www.sharelatex.com/learn/Operators">Operators</a></p></li>
+<li><p><a href="https://www.sharelatex.com/learn/Spacing_in_math_mode">Spacing in math mode</a></p></li>
+<li><p><a href="https://www.sharelatex.com/learn/Integrals,_sums_and_limits">Integrals, sums and limits</a></p></li>
+<li><p><a href="https://www.sharelatex.com/learn/Display_style_in_math_mode">Display style in math mode</a></p></li>
+<li><p><a href="https://www.sharelatex.com/learn/List_of_Greek_letters_and_math_symbols">List of Greek letters and math symbols</a></p></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h6 id="mas-información-de-markdown">Mas información de Markdown</h6>
+<p><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Info aqui</a>, incluye como hacer tablas, mini resumen de tablas:</p>
+<pre><code>| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th>Tables</th>
+<th style="text-align: center;">Are</th>
+<th style="text-align: right;">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>col 3 is</td>
+<td style="text-align: center;">right-aligned</td>
+<td style="text-align: right;">$1600</td>
+</tr>
+<tr class="even">
+<td>col 2 is</td>
+<td style="text-align: center;">centered</td>
+<td style="text-align: right;">$12</td>
+</tr>
+<tr class="odd">
+<td>zebra stripes</td>
+<td style="text-align: center;">are neat</td>
+<td style="text-align: right;">$1</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level1">
+
+<h3 id="transformar-tus-notas-a-una-presentación">Transformar tus notas a una presentación</h3>
+<p>Para hacer presentaciones necesitas agregar separaciones entre diapositivas, para hacer esto agrega ‘---’ para iniciar la siguiente diapositiva.</p>
+</section>
+<section class="slide level1">
+
+<blockquote>
+<p>Esto genera:</p>
+</blockquote>
+<pre><code># Tiulo de mi presentación
+
+---
+
+Esto es mi presentacion
+
+---
+
+blah blah blah
+
+---
+
+fin</code></pre>
+</section>
+<section class="slide level1">
+
+<blockquote>
+<p>Esto genera:</p>
+</blockquote>
+</section>
+<section id="section-4" class="slide level1" data-background-image="https://i.imgur.com/03PEcSh.png" data-background-size="contain">
+<h1></h1>
+<aside class="notes">
+<p>Como puedes hacer presentaciones de esta forma, yo recomiendo que si tienes que presentar algún tema del que tienes apuntes y ademas debes entregar un reporte entonces dupliques tus notas, en la copia elimina todo menos el tema de tus notas, agrega ‘---’ para separar los temas, luego elimina parte del texto para que halla poca información por diapositiva, finalmente duplica otra ves tus notas y redacta un poco mas para hacer el reporte, esto te ahorra re-escribir las mismas ideas 3 veces, solo tienes que expandir el texto en el reporte y recortar información en la presentación.</p>
+</aside>
+</section>
+<section class="slide level1">
+
+<p>Si quieres convertir de Markdown a PPTX(el formato de Powerpoint) copia y pega lo siguiente en la terminal.</p>
+<pre><code>pandoc EL_NOMBRE_DE_TU_ARCHIVO.md -f markdown -o EL_NUEVO_NOMBRE_DE_TU_ARCHIVO.pptx</code></pre>
+<p>Recuerda cambiar “EL_NOMBRE_DE_TU_ARCHIVO” por el nombre de tu archivo y “EL_NUEVO_NOMBRE_DE_TU_ARCHIVO” por el nombre de la presentación que vas a producir.</p>
+<aside class="notes">
+<p>si tu ppt tiene mate las reglas de mate aplican tambien, sobretodo en revealjs, en reveal js yo recomiendo webtex</p>
+</aside>
+</section>
+<section class="slide level1">
+
+<h2 id="pandoc-avanzado">Pandoc avanzado</h2>
+<p>Ahora que puedes tomar notas con Markdown y transformarlas a PDF, presentacion de Powerpoint, documento de Word y pagina de internet de manera simple con pandoc te preguntaras ¿Como puedo hacer que mis documentos transformados se vean mejor?</p>
+<p>La respuesta esta en pandoc, el manual completo de pandoc esta <a href="http://pandoc.org/MANUAL.html">aqui</a>, abajo un resumen de los mas importante en mi opinión:</p>
+</section>
+<section class="slide level1">
+
+<h3 id="especificar-formatos">Especificar formatos</h3>
+<p>usa -f, que significa ‘from’ y -t que significa ‘to’ en ingles.</p>
+<pre><code>pandoc -f markdown -t DocumentName.docx</code></pre>
+<p>Esto se puede interpretar como: “Pandoc, transforma de markdown a DocumentName.docx”</p>
+</section>
+<section class="slide level1">
+
+<h3 id="transformar-sin-especificar-formatos">Transformar sin especificar formatos</h3>
+<pre><code>pandoc -o hello.tex hello.txt</code></pre>
+<p>-o es ‘output’, se interpreta como “pandoc, produce hello.tex usando hello.txt” pandoc intentara adivinar que formato es y que formato quieres.</p>
+</section>
+<section class="slide level1">
+
+<h3 id="portadas-automáticas">Portadas automáticas</h3>
+<p>Para usar portadas, escribe esto al principio de tu documento:</p>
+<pre><code>---
+title:  &#39;This is the title: it contains a colon&#39;
+author:
+- Author One
+- Author Two
+keywords: [nothing, nothingness]
+abstract: |
+  This is the abstract.
+
+  It consists of two paragraphs.
+...</code></pre>
+<p>También puedes usar el siguiente formato (por que es mas simple)</p>
+<pre><code>% title
+% author(s) (separated by semicolons)
+% date</code></pre>
+</section>
+<section class="slide level1">
+
+<h3 id="presentacion-estilo-latex-beamer">Presentacion estilo LaTeX / Beamer</h3>
+<p>LaTeX también puede hacer presentaciones, para esto usa beamer:</p>
+<pre><code>pandoc -t beamer habits.txt -o habits.pdf</code></pre>
+<p>Las diapositivas también se separan con ‘---’.</p>
+</section>
+<section class="slide level1">
+
+<h3 id="presentaciones-reveal.js">Presentaciones Reveal.js</h3>
+<p>Reveal.js es mi metodo favorito de hacer presentaciones, es el mas profecional y el mas sencillo de automatisar el estilo, colores y tipo de letras, para transformar a reveal.js usa:</p>
+<pre><code>pandoc -t revealjs -s habits.txt -o habits.html</code></pre>
+<p>Las diapositivas también se separan con ‘---’. Las presentaciones revealjs se pueden importar y editar en <a href="https://slides.com/">slides.com</a>.</p>
+<p>si neseitas mate agrega</p>
+<pre><code>-s --webtex</code></pre>
+</section>
+<section class="slide level1">
+
+<h3 id="mas-información-de-pandoc">Mas información de Pandoc</h3>
+<ul>
+<li><a href="http://pandoc.org/MANUAL.html">Manual</a></li>
+<li><a href="https://stackoverflow.com/search?q=pandoc">Foro de ayuda</a></li>
+<li><a href="https://tex.stackexchange.com/">Foro de ayuda con LaTeX</a></li>
+<li><a href="http://pandoc.org/demos.html">Ejemplos</a></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="ejemplo">Ejemplo</h2>
+<p>Esta es una fracción de mis notas de matemáticas:</p>
+</section>
+<section class="slide level1">
+
+<pre><code>% **Libreta - Matemáticas**
+% Semestre Agosto - Diciembre 2018
+% Alejandro Escalante
+
+# Integrales y derivadas
+
+La derivadas son una relación de diferencia de cambio de una curva.
+
+$$
+pendiente = \frac{\Delta y}{\Delta x}
+$$
+
+Las integrales son la reversa de integrales, una buena forma de visualizar integrales es pensando en el área debajo de la curva.
+
+![Curva en rojo y área en gris](https://matplotlib.org/1.4.2/_images/integral_demo.png)
+
+\pagebreak
+
+**Formulas de derivadas**
+
+_basica:_
+
+
+$$
+x^n = nx^{n-1}
+$$
+
+_Casos comunes:_
+
+|  |  |  |
+|--|--|--|
+| $\frac{d}{dx}(c) = 0$ | $\frac{d}{dx}(x^n) = nx^{n-1}$ | $\frac{d}{dx}(e^x) = e^x$ |
+| $(cf)&#39; = cf&#39;$ | $(f + g)&#39; = f&#39; + g&#39;$ | $(f - g)&#39; = f&#39; - g&#39;$ |
+| $(fg)&#39; = fg&#39; + gf&#39;$ | $\left( \frac{f}{g} \right) &#39; = \frac{gf&#39;+fg&#39;}{g^2}$ |  |
+
+_funciones trigonométricas:_
+
+|  |  |  |
+|--|--|--|
+| $\frac{d}{dx}(sen x) = cos x$ | $\frac{d}{dx}(cos x) = -sen x$ | $\frac{d}{dx}(tan x) = sec^2 x$ |
+| $\frac{d}{dx}(csc x) = -csc x cot x$ | $\frac{d}{dx}(sec x) = sec x tan x$ | $\frac{d}{dx}(cot x) = -csc^2x$ |    </code></pre>
+</section>
+<section class="slide level1">
+
+<p>Si lo transformo a HTML con pandoc usando kaktex con el comando:</p>
+<pre><code>pandoc Notas_Matemáticas.md -s --katex   -o mate-notas-web.html</code></pre>
+</section>
+<section class="slide level1">
+
+<p>Pandoc genera el siguiente documento html:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;&lt;meta name=&quot;author&quot; content=&quot;Semestre Agosto - Diciembre 2018&quot; /&gt;&lt;title&gt;Libreta - Matemáticas&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;  code{white-space: pre-wrap;}    span.smallcaps{font-variant: small-caps;}   span.underline{text-decoration: underline;} div.column{display: inline-block; vertical-align: top; width: 50%;}&lt;/style&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/contrib/auto-render.min.js&gt;&lt;/script&gt;&lt;script&gt;document.addEventListener(&quot;DOMContentLoaded&quot;, function() {        renderMathInElement(document.body);});&lt;/script&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css&quot; /&gt;&lt;!--[if lt IE 9]&gt;       &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;
+&lt;h1 class=&quot;title&quot;&gt;&lt;strong&gt;Libreta - Matemáticas&lt;/strong&gt;&lt;/h1&gt;
+&lt;p class=&quot;author&quot;&gt;Semestre Agosto - Diciembre 2018&lt;/p&gt;
+&lt;p class=&quot;date&quot;&gt;Alejandro Escalante&lt;/p&gt;
+&lt;/header&gt;
+&lt;h1 id=&quot;integrales-y-derivadas&quot;&gt;Integrales y derivadas&lt;/h1&gt;
+&lt;p&gt;La derivadas son una relación de diferencia de cambio de una curva.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;\[
+pendiente = \frac{\Delta y}{\Delta x}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Las integrales son la reversa de integrales, una buena forma de visualizar integrales es pensando en el área debajo de la curva.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://matplotlib.org/1.4.2/_images/integral_demo.png&quot; alt=&quot;Curva en rojo y área en gris&quot; /&gt;&lt;figcaption&gt;Curva en rojo y área en gris&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Formulas de derivadas&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;basica:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;\[
+x^n = nx^{n-1}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Casos comunes:&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;tbody&gt;
+&lt;tr class=&quot;odd&quot;&gt;
+&lt;td&gt;&lt;span class=&quot;math inline&quot;&gt;\(\frac{d}{dx}(c) = 0\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;math inline&quot;&gt;\(\frac{d}{dx}(x^n) = nx^{n-1}\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;math inline&quot;&gt;\(\frac{d}{dx}(e^x) = e^x\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;even&quot;&gt;
+&lt;td&gt;&lt;span class=&quot;math inline&quot;&gt;\((cf)&amp;#39; = cf&amp;#39;\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;math inline&quot;&gt;\((f + g)&amp;#39; = f&amp;#39; + g&amp;#39;\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;math inline&quot;&gt;\((f - g)&amp;#39; = f&amp;#39; - g&amp;#39;\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;odd&quot;&gt;
+&lt;td&gt;&lt;span class=&quot;math inline&quot;&gt;\((fg)&amp;#39; = fg&amp;#39; + gf&amp;#39;\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;math inline&quot;&gt;\(\left( \frac{f}{g} \right) &amp;#39; = \frac{gf&amp;#39;+fg&amp;#39;}{g^2}\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;funciones trigonométricas:&lt;/em&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 33%&quot; /&gt;
+&lt;col style=&quot;width: 33%&quot; /&gt;
+&lt;col style=&quot;width: 33%&quot; /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr class=&quot;odd&quot;&gt;
+&lt;td&gt;&lt;span class=&quot;math inline&quot;&gt;\(\frac{d}{dx}(sen x) = cos x\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;math inline&quot;&gt;\(\frac{d}{dx}(cos x) = -sen x\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;math inline&quot;&gt;\(\frac{d}{dx}(tan x) = sec^2 x\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;even&quot;&gt;
+&lt;td&gt;&lt;span class=&quot;math inline&quot;&gt;\(\frac{d}{dx}(csc x) = -csc x cot x\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;math inline&quot;&gt;\(\frac{d}{dx}(sec x) = sec x tan x\)&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;&lt;span class=&quot;math inline&quot;&gt;\(\frac{d}{dx}(cot x) = -csc^2x\)&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+<section class="slide level1">
+
+<p>Aunque no tengo la menor idea de como leer html lo subiré a <a href="alex-esc.neocities.org">mi pagina</a> y agrego el link a mi css de estilo markdown y me produce:</p>
+</section>
+<section id="section-5" class="slide level1" data-background-image="https://i.imgur.com/reoV9VD.png" data-background-size="contain">
+<h1></h1>
+</section>
+<section class="slide level1">
+
+<p>Esto me genera un respaldo en linea de mis notas, pero si quiero el archivo en pdf entonces uso estas instrucciones en pandoc:</p>
+<pre><code>pandoc Notas_Matemáticas.md -f markdown -o mate-notas.pdf</code></pre>
+</section>
+<section id="section-6" class="slide level1" data-background-image="https://i.imgur.com/scVPZrD.png" data-background-size="original">
+<h1></h1>
+<p>El siguiente PDF es generado:</p>
+<blockquote>
+<p>*Screenshot de mis notas completas, el pdf real de esta conversión seria ligeramente diferente</p>
+</blockquote>
+</section>
+<section class="slide level1">
+
+<h2 id="en-resumen">En resumen</h2>
+<p>Markdown –&gt; Pandoc –&gt; PDF/Word/Slides/Pagina web</p>
+</section>
+<section class="slide level1">
+
+<pre><code>% titulo
+% autor
+% fecha
+
+# Este es mi documento en markdown
+
+Este es el **contenido** con matemáticas $x=1$</code></pre>
+</section>
+<section class="slide level1">
+
+<pre><code>pandoc midocumento.md -f markdown -s --katex -o midocumento.html</code></pre>
+<p>Produce:</p>
+<pre><code>    &lt;!DOCTYPE html&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;&quot; xml:lang=&quot;&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;meta name=&quot;generator&quot; content=&quot;pandoc&quot; /&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, user-scalable=yes&quot; /&gt;&lt;meta name=&quot;author&quot; content=&quot;autor&quot; /&gt;
+  &lt;title&gt;titulo&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;code{white-space: pre-wrap;}span.smallcaps{font-variant: small-caps;}span.underline{text-decoration: underline;}div.column{display: inline-block; vertical-align: top; width: 50%;}&lt;/style&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/contrib/auto-render.min.js&quot;&gt;&lt;/script&gt;&lt;script&gt;document.addEventListener(&quot;DOMContentLoaded&quot;, function() {renderMathInElement(document.body);});&lt;/script&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css&quot; /&gt;&lt;!--[if lt IE 9]&gt;&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;
+&lt;h1 class=&quot;title&quot;&gt;titulo&lt;/h1&gt;
+&lt;p class=&quot;author&quot;&gt;autor&lt;/p&gt;
+&lt;p class=&quot;date&quot;&gt;fecha&lt;/p&gt;
+&lt;/header&gt;
+&lt;h1 id=&quot;este-es-mi-documento-en-markdown&quot;&gt;Este es mi documento en markdown&lt;/h1&gt;
+&lt;p&gt;Este es el &lt;strong&gt;contenido&lt;/strong&gt; con matemáticas &lt;span class=&quot;math inline&quot;&gt;\(x=1\)&lt;/span&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<aside class="notes">
+<p>pasa por pandoc 2 veses, primero con las opciones: y produce:</p>
+</aside>
+</section>
+<section class="slide level1">
+
+<p>Agrego mi css después de &lt;meta charset=“utf-8” /&gt;</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/modest.css&quot;&gt;</code></pre>
+</section>
+<section class="slide level1">
+
+<p>Genera esta pagina:</p>
+</section>
+<section id="section-7" class="slide level1" data-background-image="https://i.imgur.com/iB4gthN.png" data-background-size="contain">
+<h1></h1>
+</section>
+<section class="slide level1">
+
+<pre><code>pandoc midocumento.md -f markdown -o midocumento.pdf</code></pre>
+<p>Y me produce este PDF:</p>
+</section>
+<section id="section-8" class="slide level1" data-background-image="https://i.imgur.com/gZweNTV.png" data-background-size="contain">
+<h1></h1>
+</section>
+<section id="extra-tip" class="slide level1">
+<h1>Extra tip!</h1>
+</section>
+<section class="slide level1">
+
+<p>Como hice esta presentación en particular?</p>
+<div class="fragment">
+<p>use reveal js!</p>
+<pre><code>pandoc -s --webtex -t revealjs -s notas-slides.md -o slides_en_revealjs.html</code></pre>
+<p>Uso</p>
+<pre><code>. . .</code></pre>
+<p>para revelar contenido</p>
+</div>
+</section>
+<section class="slide level1">
+
+<p>luego voy a slides.com y importo el codigo!</p>
+</section>
+<section class="slide level1">
+
+<p>Hice este tutorial en texto, agrégalo a favoritos!</p>
+<p><a href="alex-esc.github.io/blog/notas">Esta en mi blog</a></p>
+</section>
+<section id="fin" class="slide level1">
+<h1>Fin</h1>
+</section>
+<section id="alex-esc.github.io" class="slide level1">
+<h1><a href="alex-esc.github.io" class="uri">alex-esc.github.io</a></h1>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

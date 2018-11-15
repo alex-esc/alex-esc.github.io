@@ -1,66 +1,124 @@
-# Notas digitales
+% Notas digitales
+% Simples y flexibles
+% alex-esc.github.io
 
-En esta guía te enseñara como tomar notas digitales con texto, formato, links, imágenes o gráficas, bloques de código, tablas y ecuaciones de manera efectiva, como transformar tus notas a Word, PDF , publicar tus notas o tareas en una pagina web y en como transformar tus notas a una presentación estilo PowerPoint automáticamente. Todo esto desde cualquier dispositivo, sea laptop, Smartphone, tablet, PC, Mac o Linux.
 
-> Este método es gratis, **necesitas una computadora (PC, Mac, Linux) como mínimo, puedes hacer tus documentos en tu teléfono pero no transformarlos a PDF, docx etc hasta pasarlos a tu computadora**, las transformaciones solo se pueden hacer en una computadora por que un programa llamado pandoc solo corre en pc's, Termux podría funcionar para android pero no esta oficialmente soportado.
+# Notas digitales con:
+
+* texto
+* formato
+* links
+* imágenes o gráficas
+* bloques de código
+* tablas
+* ecuaciones
+
+::: notes
+pandoc -s --webtex -t revealjs -s .\notas-slides.md -o slidescool.html
+:::
+
+---
+
+# En formato
+
+* PDF
+* Word
+* Pagina web
+* Powerpoint
+
+---
+
+**Gratis** 
+
+PC, Mac, Linux + Andoid , ios
+
+::: notes
+
+necesitas una computadora (PC, Mac, Linux) como mínimo, puedes hacer tus documentos en tu teléfono pero no transformarlos a PDF, docx etc hasta pasarlos a tu computadora**, las transformaciones solo se pueden hacer en una computadora por que un programa llamado pandoc solo corre en pc's, Termux podría funcionar para android pero no esta oficialmente soportado.
+
+:::
+
+---
 
 Recomiendo esta guía a estudiantes principalmente.
 
-###### Indice
+---
 
-* Como usar Markdown
-	* Grandes ventajas de markdown
-	* Como transformar tus documentos usando Pandoc
-		* Paso uno, instala Pandoc
-		* Paso dos, localiza tu documento a transformar
-		* Ultimo paso, transforma tu documento
-			* Transformar a PDF
-			* Transformar a una pagina web
-			* Transformar a un documento de word
-* Markdown avanzado
-	* Comentarios
-	* Escribir ejemplos de código
-	* Citas
-	* Hacer un PDF con tabla de contenidos
-	* Forzar PDF a saltar a siguiente pagina
-	* Agregar espacio en blanco entre párrafos
-	* Como escribir símbolos especiales
-	* Escribir ecuaciones y modo matemáticas
-		* Matemáticas entre texto
-		* Matemáticas por si solas
-		* Formato de matemáticas de LaTeX
-		* Números, sumas, restas y multiplicaciones
-		* Divisiones	
-		* Exponentes y subindices
-		* Múltiples ecuaciones alineadas 
-			* Mas información de formato LaTeX
-			* Mas información de Markdown
-	* Transformar tus notas a una presentación
-* Pandoc avanzado
-	* Transformar sin especificar formatos
-	* Portadas automáticas
-	* Presentacion estilo LaTeX / Beamer
-	* Presentaciones Reveal.js
-	* Especificar formatos
-	* Mas información de Pandoc
-* Ejemplo
-* En resumen
 
 ## Notas simples y flexibles
 
+::: notes
+
 Así se ve el respaldo de mis notas en mi pagina web:
 
-![](https://i.imgur.com/reoV9VD.png)
 
-La pregunta numero uno que me hacen mis compañeros es ¿como haces que tus notas se vean así? la respuesta corta es _Markdown_. La respuesta larga es... un poco mas complicada, hay 3 partes principales de mi sistema de notas: El texto original, Documento en PDF y un respaldo en mi pagina web. Esta guía te enseñara como duplicar mi estilo de notas.
+:::
+---
 
-Una parte importante de tomar todos tus apuntes digitales es la eliminación de distracciones y no no solo me refiero a dejar atrás tu teléfono, me refiero a distracciones dentro del método de tomar notas, por ejemplo:
 
+
+# {data-background-image="https://i.imgur.com/reoV9VD.png" data-background-size="contain"}
+
+---
+
+# ¿como haces que tus notas se vean así? 
+
+. . .
+
+la respuesta corta es _Markdown_.
+
+---
+
+* Texto original
+* Documento en PDF
+* Respaldo en mi pagina web
+
+::: notes
+La respuesta larga es... un poco mas complicada, hay 3 partes principales de mi sistema de notas: El texto original, Documento en PDF y un respaldo en mi pagina web. Esta guía te enseñara como duplicar mi estilo de notas.
+:::
+
+---
+
+Una parte importante de tomar todos tus apuntes digitales es la eliminación de distracciones.
+
+. . .
+
+No solo me refiero a dejar atrás tu teléfono, me refiero a distracciones dentro del método de tomar notas
+
+---
+
+~~word, google drive, pages~~
+
+. . .
+
+
+
+
+
+
+
+Usaremos cualquier editor de texto.
+
+. . .
+
+solo tu y tu teclado.
+
+::: notes
 En procesadores de texto como word, google drive o pages cada acción esta escondida debajo de un menu o sub-menu, pasaras una gran cantidad de tiempo haciendo click derecho aqui, arrastrando imágenes y objetos por allá, en lugar de escribiendo el contenido. Por eso en mi método no usaremos word o pages o drive en particular, este método te permite trabajar en cualquier editor de texto sin tener que pelear con menús, solo tu y tu teclado.
+:::
+
+---
 
 ## Como usar Markdown
 
-Como mencione al principio usaremos Markdown (o "md" por su extensión), este no es un nuevo programa por aprender, markdown es solo sintaxis. La meta de md es simple: ser fácil de leer en cualquier dispositivo y en cualquier programa.
+
+	Archivo.md
+
+markdown es solo sintaxis. La meta de md es simple: ser fácil de leer en cualquier dispositivo y en cualquier programa.
+
+
+---
+
 
 Un archivo de markdown se ve asi:
 
@@ -76,91 +134,161 @@ Un archivo de markdown se ve asi:
 
 	_basica:_
 	
+---
+
+# Texto + símbolos extra
+
+::: notes
 No es nada especial, solo es texto con símbolos extra, como puedes ver este texto es una parte de la imagen de arriba. Poner un '#' antes de cualquier texto lo convierte en el titulo, poner dos '*' alrededor de una o mas palabras las convierte en negritas y poner un '_' alrededor de otras palabras las convierte en itálicas.
+:::
 
-Mas adelante veremos como escribir ecuaciones en markdown, pero por ahora aquí un ejemplo de las funciones funciones de markdown
+---
 
-	# Esto es un titulo
+# sintaxis básica
 
-	## Esto es un sub-titulo
+	# hace títulos y subtitulos
+	** hacen negritas
+	_ hacen itálicas
+	[]() hacen links con texto
+	![]() hacen imágenes
 
-	### subtitulo nivel 3
+---
 
-	#### subtitulo nivel 4
+# Markdown tutor
 
-	##### subtitulo nivel 5
+[markdowntutorial.com](https://www.markdowntutorial.com/)
 
-	###### subtitulo nivel 6
+---
 
-	####### subtitulo nivel 7
+# Guardar como Markdown
 
-	######## solo puedes hacer 8 sub niveles de titulo
+	Archivo.md
 
-	Esto es texto normal, pero **esto esta en negritas** y _esto en itálicas_.
+::: notes
+no olvides guardar tu documento con la terminación '.md' para guardarlo como archivo markdown. Archivo -> Guardar como -> escribe el nombre del documento y agrega '.md' al final.
+:::
 
-	Deja una linea entre renglones para iniciar un nuevo párrafo.
-
-	[Esto es un link y te lleva a wikipedia](https://www.wikipedia.org/)
-
-	y abajo hay un link a una foto, agragar un '!' antes del link te mostrara la foto. (como la gráfica de integrales en el primer ejemplo)
-
-	![Esto son notas de la foto, pueden estar vacías.](https://upload.wikimedia.org/wikipedia/commons/d/de/Wikipedia_Logo_1.0.png)
-
-	La foto de arriba es el logo de wikipedia.
-	
-	* Esto es una lista de puntos
-		* sub punto
-		* otro
-	* otro punto principal
-		* sub punto
-			*sub-sub punto
-			
-	1. Esto es una lista enumerada
-	1. Numero dos
-	1. Numero tres
-	1. No es nesesario poner el numero correcto, al transformarlo a word o pdf se enumeraran solos
-
-Entonces para usar markdown solo abre un editor de texto, el que tu quieras y escribe siguiendo estas reglas, no olvides guardar tu documento con la terminación '.md' para guardarlo como archivo markdown. Archivo -> Guardar como -> escribe el nombre del documento y agrega '.md' al final.
+---
 
 ## Grandes ventajas de markdown
 
-![](https://i.imgur.com/sDO7Pp9.png)
+---
 
-Bueno ahora escribes tus notas con hastags, asteriscos y brackets por doquier ¿pero esto de que me sirve? bueno si te as fijado que aun no hay imágenes ni negritas aun es por que markdown tiene que convertirse de texto a algo mas, algo como un PDF o documento de word, si no lo transformas no sera mas que texto simple, pero esto el la primera gran ventaja de md: como solo es texto, lo puedes editar con cualquier programa en cualquier aparato: Puedes usar block de notas en tu PC y continuar tomando notas en tu celular y fácilmente agregar las nuevas notas que tomaste en tu teléfono a tu computadora.
+# {data-background-image="https://i.imgur.com/UDEb95A.png" data-background-size="contain"}
 
-En otras palabras _Markdown te permite hacer PDFs, documentos de word y paginas web en cualquier dispositivo_, puedes usar dropbox, drive o icloud para sincronizar las notas de tu smartphone y tu computadora. Como un extra, también puedes transformar tus documentos de markdown a una presentación de Powerpoint, esto te ahorrara mucho tiempo cuando tengas que hacer un escrito sobre un tema visto en clase y una presentación ya que el escrito sera una versión extendida de tus notas, el Powerpoint se generara de tus notas, mas adelante veremos este tema, por ahora lo básico.
+::: notes
+mas de 66 opciones en este screenshot!
+:::
 
-Cuando termines tus notas y quieras convertirlas a PDF, word o pagina web solo abre la carpeta con tus notas, usaras un programa llamado **pandoc** para hacer la trasformación.
+---
 
-## Como transformar tus documentos usando Pandoc
+# {data-background-image="https://i.imgur.com/sDO7Pp9.png" data-background-size="contain"}
 
+
+
+---
+
+Bueno ahora escribes tus notas con hastags, asteriscos y brackets por doquier ¿pero esto de que me sirve? 
+
+. . .
+
+bueno si te as fijado que aun no hay imágenes ni negritas.
+
+---
+
+# Siguiente paso, conversión
+
+Markdown -> PDF/Word
+
+::: notes
+aun es por que markdown tiene que convertirse de texto a algo mas, algo como un PDF o documento de word, si no lo transformas no sera mas que texto simple, pero esto el la primera gran ventaja de md: como solo es texto, lo puedes editar con cualquier programa en cualquier aparato: Puedes usar block de notas en tu PC y continuar tomando notas en tu celular y fácilmente agregar las nuevas notas que tomaste en tu teléfono a tu computadora.
+:::
+
+
+---
+
+
+
+En otras palabras _Markdown te permite hacer PDFs, documentos de word y paginas web en cualquier dispositivo_
+
+. . .
+
+Ademas puedes hacer presentaciones automáticamente, en pptx y como esta!
+
+::: notes
+
+
+puedes usar dropbox, drive o icloud para sincronizar las notas de tu smartphone y tu computadora. Como un extra, también puedes transformar tus documentos de markdown a una presentación de Powerpoint, esto te ahorrara mucho tiempo cuando tengas que hacer un escrito sobre un tema visto en clase y una presentación ya que el escrito sera una versión extendida de tus notas, el Powerpoint se generara de tus notas, mas adelante veremos este tema, por ahora lo básico.
+
+:::
+
+---
+
+# Pandoc
+
+Es el programa que usaremos para las transformaciones.
+
+Para usarlo tendrás que...
+
+. . .
+
+Usar la terminal de comandos.
+
+---
+
+
+# {data-background-image="https://i.giphy.com/media/l46C6sdSa5DVSJnLG/giphy.webp"}
+
+---
+
+No te preocupes, no necesitas ser un experto, **solo necesitas saber copiar y pegar, eso es todo.**
+
+::: notes
 Pandoc es una simple herramienta que transforma documentos, una ves que este instalado en tu computadora tendrás que usar la terminal o linea de comandos para hacer la transformación. **Woah woah woah!** ¿dijiste linea de comandos? ¡detente ahí no soy experto en computadoras! 
 
-No te preocupes, yo tampoco soy un experto, _solo necesitas saber copiar y pegar, eso es todo._
+:::
+
+---
+
 
 ### Paso uno, instala Pandoc
 
 Guía de instalación de pandoc en [PC](http://www.texts.io/support/0004/), [Mac](http://www.texts.io/support/0003/) y [linux](https://pandoc.org/installing.html#linux)
 
+[Manual de instalación oficial](https://pandoc.org/installing.html)
+
+::: notes
 Si tienes problemas la pagina oficial de Pandoc esta [aquí](https://pandoc.org/installing.html)
+:::
+
+---
 
 ### Paso dos, localiza tu documento a transformar
 
 Abre la carpeta donde guardas tu documento, recuerda que termina en '.md', luego abre la terminal en esa carpeta:
 
-* En Windows has click derecho en el espacio en blanco y preciosa la tecla shift al mismo tiempo, luego selecciona a abrir Powershell aquí. ([mas info](https://www.addictivetips.com/windows-tips/open-powershell-in-a-specific-location/))
+* En Windows shift + click derecho en una carpeta --> abrir Powershell aquí. ([mas info](https://www.addictivetips.com/windows-tips/open-powershell-in-a-specific-location/))
 
-* En Mac ve a preferencias , teclado, atajos, servicios y activa New Terminal at Folder, luego de esto podrás hacer click derecho en cualquier folder y en servicios habrá una opción para abrir nueva terminal aquí. ([mas info](https://lifehacker.com/launch-an-os-x-terminal-window-from-a-specific-folder-1466745514))
+* En Mac ve a preferencias/teclado/atajos/servicios/New Terminal at Folder, luego de esto podrás click derecho --> abrir nueva terminal aquí. ([mas info](https://lifehacker.com/launch-an-os-x-terminal-window-from-a-specific-folder-1466745514))
 
-* En linux (Ubuntu) preciona Ctrl + Alt + T y pega este texto "sudo apt-get install nautilus-open-terminal" (sin comillas), esto instalara el menú de abrir en terminal, reinicia tu computadora y has click derecho en cualquier archivo y selecciona abrir en terminal. ([mas info](https://www.howtogeek.com/192865/how-to-open-terminal-to-a-specific-folder-in-ubuntus-file-browser/))
+* En linux (Ubuntu) preciona Ctrl + Alt + T y pega este texto "sudo apt-get install nautilus-open-terminal" , reinicia tu computadora y has click derecho en cualquier archivo. ([mas info](https://www.howtogeek.com/192865/how-to-open-terminal-to-a-specific-folder-in-ubuntus-file-browser/))
 
+
+
+::: notes
 Obviamente solo tendrás que hacer las configuraciones necesarias la primera ves, luego sigue lo mas fácil, si tienes problemas no olvides que el internet es tu amigo!
+
+:::
+
+---
 
 ### Ultimo paso, transforma tu documento
 
 Ahora debes estar en la terminal, el texto debe indicar que estas en la misma carpeta que tu archivo, luego tenemos que decidir a que formato queremos convertir:
 
 En esta guía veremos como transformar markdown a PDF, word y una pagina web, si quieres transformar a otros formatos [aquí](https://pandoc.org/MANUAL.html) esta el manual de pandoc.
+
+---
 
 #### Transformar a PDF
 
@@ -169,6 +297,8 @@ Si quieres convertir de Markdown a PDF copia y pega lo siguiente en la terminal.
 	pandoc EL_NOMBRE_DE_TU_ARCHIVO.md -f markdown -o EL_NUEVO_NOMBRE_DE_TU_ARCHIVO.pdf
 	
 Recuerda cambiar "EL_NOMBRE_DE_TU_ARCHIVO" por el nombre de tu archivo y "EL_NUEVO_NOMBRE_DE_TU_ARCHIVO" por el nombre del PDF que vas a producir.
+
+---
 
 #### Transformar a una pagina web
 
@@ -182,6 +312,8 @@ cambia '-f markdown' por '-s --katex' si necesitas usar matemáticas, también p
 
 	pandoc math.text -s --katex   -o mathKaTeX.html
 
+---	
+
 #### Transformar a un documento de word
 
 Si quieres convertir de Markdown a docx copia y pega lo siguiente en la terminal.
@@ -192,9 +324,32 @@ Recuerda cambiar "EL_NOMBRE_DE_TU_ARCHIVO" por el nombre de tu archivo y "EL_NUE
 
 Veremos como transformar a Powerpoint mas adelante...
 
-
+---
 
 ## Markdown avanzado
+
+podemos hacer negritas, títulos , imágenes faltan cosas mas avanzadas como:
+
+. . .
+
+* Comentarios
+* Escribir ejemplos de código
+* Citas
+* Hacer un PDF con tabla de contenidos
+* Forzar PDF a saltar a siguiente pagina
+* Agregar espacio en blanco entre párrafos
+* Como escribir símbolos especiales
+* Escribir ecuaciones y modo matemáticas
+
+. . .
+
+Esto no es necesario, si no usas códigos o comentarios puedes saltarte esta parte.
+
+::: notes
+Pero si necesitas matemáticas como equitaciones sigue viendo el video!
+:::
+
+---
 
 ### Comentarios
 
@@ -209,6 +364,8 @@ Para escribir un comentario, primero escribe '\<\!\-\-' luego tu comentario, cua
 	Para escribir un comentario, primero escribe '<!--' luego tu comentario, cuando termines tu comentario escribe '-->'. Un comentario es texto que no se mostrara cunado el archivo markdown sea transformado a word, PDF o cualquier otro formato.
 
 Por ejemplo, este comentario para recordarme corregir ortografía es invisible, yo recomiendo que copies el código que usaras para transformar el documento con pandoc en un comentario, para recordarte como hacer la transformación.
+
+---
 
 #### Escribir ejemplos de código
 
@@ -232,6 +389,8 @@ Esto es código tabulado:
 		}
 	}
 
+---
+	
 #### Citas
 
 Para sobresalir un texto de por ejemplo una cita textual solo agregamos '>' al principio de un párrafo:
@@ -249,22 +408,37 @@ Cita con '>':
 >
 >  Albert Einstein
 
+---
+
 #### Hacer un PDF con tabla de contenidos
 
 escribe '\\tableofcontents' al principio de tu documento
+
+---
 
 #### Forzar PDF a saltar a siguiente pagina
 
 Agrega '\\pagebreak' entre párrafos para asegurarte que se salte una pagina después de un párrafo.
 
+---
+
 #### Agregar espacio en blanco entre párrafos
 
 usa el ambiente '\\vspace{}' para agregar espacio vertical entre párrafos, por ejemplo '\\vspace{5cm}' se salta 5 centímetros, esto es util para hacer paginas de portada simples.
 
+---
 
 #### Como escribir símbolos especiales
 
-¿Que tal si quieres escribir un símbolo que se usa para cambiar el formato? solo tienes que agregar '\\' al principio. Si quieres escribir caracteres especiales como delta o pi, tienes que buscar como escribirlos en _LaTeX_, LaTeX es otro formato como markdown, pero LaTeX es mas complicado por eso solo lo usaremos muy poco.
+¿Que tal si quieres escribir un símbolo que se usa para cambiar el formato? solo tienes que agregar '\\' al principio. 
+
+. . .
+
+Si quieres escribir caracteres especiales como delta o pi, tienes que buscar como escribirlos en _LaTeX_.
+
+LaTeX es otro formato como markdown, pero LaTeX es mas complicado por eso solo lo usaremos muy poco.
+
+---
 
 Lo único que tienes que saber de LaTeX es:
 
@@ -272,15 +446,30 @@ Lo único que tienes que saber de LaTeX es:
 * Sintaxis de matemáticas
 * Modo de ecuaciones alineadas
 
-Veremos cada punto en esta guía, primero caracteres especiales: Por ejemplo para escribir _el numero pi_ usaremos \\pi, para delta usaremos '\\Delta' etc, solo busca en Internet como escribir el símbolo que deseas en LaTeX.
+---
+
 
 Así se escriben los símbolos $\pi$ y $\Delta$ en _LaTeX_.
 
 	Así se escriben los símbolos $\pi$ y $\Delta$ en _LaTeX_.
 
+---	
+
 #### Escribir ecuaciones y modo matemáticas
 
-Para escribir matemáticas primero debemos entrar en 'math mode' , esto es simple, para activar este modo usaremos '$' , por eso el ejemplo de arriba tiene símbolos de dolar alrededor de pi y Delta, todos los símbolos escritos en LaTeX necesitan estar en mathmode, hay dos opciones para mathmode: matemáticas entre texto y matemáticas por si solas. Si quieres insertar ecuaciones entre texto escribe tu ecuación entre símbolos de dolar: 
+**\$mathmode\$**
+
+. . .
+
+Hay dos opciones para mathmode: matemáticas entre texto y matemáticas por si solas. Si quieres insertar ecuaciones entre texto escribe tu ecuación entre símbolos de dolar: 
+
+
+
+::: notes
+, esto es simple, para activar este modo usaremos '$' , por eso el ejemplo de arriba tiene símbolos de dolar alrededor de pi y Delta, todos los símbolos escritos en LaTeX necesitan estar en mathmode, 
+:::
+
+---
 
 ##### Matemáticas entre texto
 
@@ -291,6 +480,8 @@ Para escribir matemáticas primero debemos entrar en 'math mode' , esto es simpl
 > Produce esto:
 
 La famosa formula de Einstein es $E = MC^2$ , Parte de la teoría de la relatividad, conocida como Equivalencia entre masa y energía.
+
+---
 
 ##### Matemáticas por si solas
 
@@ -317,9 +508,13 @@ $$
 
 Forma parte de la teoría de la relatividad, conocida como Equivalencia entre masa y energía.
 
+---
+
 ##### Formato de matemáticas de LaTeX
 
 Todas las matemáticas en md se escribes en LaTeX, todas las ecuaciones siguen este formato:
+
+---
 
 ###### Números, sumas, restas y multiplicaciones
 
@@ -335,6 +530,8 @@ $$
 2 + 2 = 5 - 1 * 1
 $$
 
+---
+
 ###### Divisiones
 
 Usa el código frac, luego entre llaves escribe el numerador y en otras llaves el denominador:
@@ -348,7 +545,9 @@ Usa el código frac, luego entre llaves escribe el numerador y en otras llaves e
 $$
 \frac{1}{2}
 $$
-	
+
+---
+
 ###### Exponentes y subindices
 
 Usa el símbolo '^' para elevar solo un numero, usa llaves para elevar varios números, usa el símbolo '_' para hacer subindices
@@ -364,6 +563,8 @@ x^{2 \alpha} - z^w = y_{ij} + y_{ij} - z_w
 $$
 
 Recuerda que puedes incluir caracteres especiales con LaTeX, por eso el ejemplo usa '\\alpha'.
+
+---
 
 ###### Múltiples ecuaciones alineadas 
 
@@ -391,7 +592,11 @@ y(x) &= sen(x)
 \end{align*}
 $$
 
+---
+
 Recuerda que tienes que entrar a modo matemáticas con símbolos de dolar. En el ejemplo usamos el modo 'align\*' porque el modo 'align' también numera las ecuaciones, mientras que el modo 'align\*' no las enumera.
+
+---
 
 ###### Mas información de formato LaTeX
 
@@ -415,6 +620,8 @@ Guías de matemáticas en LaTeX (Links)
 
 * [List of Greek letters and math symbols](https://www.sharelatex.com/learn/List_of_Greek_letters_and_math_symbols)
 
+---
+
 ###### Mas información de Markdown
 
 [Info aqui](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), incluye como hacer tablas, mini resumen de tablas:
@@ -431,11 +638,13 @@ Guías de matemáticas en LaTeX (Links)
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-Mas detalles en el link de arriba.
+---
 
 ### Transformar tus notas a una presentación
 
 Para hacer presentaciones necesitas agregar separaciones entre diapositivas, para hacer esto agrega '\-\-\-' para iniciar la siguiente diapositiva.
+
+---
 
 > Esto genera:
 
@@ -453,12 +662,19 @@ Para hacer presentaciones necesitas agregar separaciones entre diapositivas, par
 
 	fin
 
-
+---
+	
 > Esto genera:
 
-![](https://i.imgur.com/03PEcSh.png)
+# {data-background-image="https://i.imgur.com/03PEcSh.png" data-background-size="contain"}
 
+
+::: notes
 Como puedes hacer presentaciones de esta forma, yo recomiendo que si tienes que presentar algún tema del que tienes apuntes y ademas debes entregar un reporte entonces dupliques tus notas, en la copia elimina todo menos el tema de tus notas, agrega '\-\-\-' para separar los temas, luego elimina parte del texto para que halla poca información por diapositiva, finalmente duplica otra ves tus notas y redacta un poco mas para hacer el reporte, esto te ahorra re-escribir las mismas ideas 3 veces, solo tienes que expandir el texto en el reporte y recortar información en la presentación.
+:::
+
+---
+
 
 Si quieres convertir de Markdown a PPTX(el formato de Powerpoint) copia y pega lo siguiente en la terminal.
 
@@ -466,11 +682,19 @@ Si quieres convertir de Markdown a PPTX(el formato de Powerpoint) copia y pega l
 	
 Recuerda cambiar "EL_NOMBRE_DE_TU_ARCHIVO" por el nombre de tu archivo y "EL_NUEVO_NOMBRE_DE_TU_ARCHIVO" por el nombre de la presentación que vas a producir.
 
+::: notes
+si tu ppt tiene mate las reglas de mate aplican tambien, sobretodo en revealjs, en reveal js yo recomiendo webtex
+:::
+
+---
+
 ## Pandoc avanzado
 
 Ahora que puedes tomar notas con Markdown y transformarlas a PDF, presentacion de Powerpoint, documento de Word y pagina de internet de manera simple con pandoc te preguntaras ¿Como puedo hacer que mis documentos transformados se vean mejor?
 
 La respuesta esta en pandoc, el manual completo de pandoc esta [aqui](http://pandoc.org/MANUAL.html), abajo un resumen de los mas importante en mi opinión:
+
+---
 
 ### Especificar formatos
 
@@ -480,11 +704,15 @@ usa -f, que significa 'from' y -t que significa 'to' en ingles.
 	
 Esto se puede interpretar como: "Pandoc, transforma de markdown a DocumentName.docx" 
 
+---
+
 ### Transformar sin especificar formatos
 
 	pandoc -o hello.tex hello.txt
 	
 -o es 'output', se interpreta como "pandoc, produce hello.tex usando hello.txt" pandoc intentara adivinar que formato es y que formato quieres.
+
+---
 
 ### Portadas automáticas
 
@@ -507,6 +735,8 @@ También puedes usar el siguiente formato (por que es mas simple)
 	% title
 	% author(s) (separated by semicolons)
 	% date
+
+---
 	
 ### Presentacion estilo LaTeX / Beamer
 
@@ -516,6 +746,8 @@ LaTeX también puede hacer presentaciones, para esto usa beamer:
 	
 Las diapositivas también se separan con '\-\-\-'.
 
+---
+
 ### Presentaciones Reveal.js
 
 Reveal.js es mi metodo favorito de hacer presentaciones, es el mas profecional y el mas sencillo de automatisar el estilo, colores y tipo de letras, para transformar a reveal.js usa:
@@ -524,6 +756,12 @@ Reveal.js es mi metodo favorito de hacer presentaciones, es el mas profecional y
 
 Las diapositivas también se separan con '\-\-\-'. Las presentaciones revealjs se pueden importar y editar en [slides.com](https://slides.com/).
 
+si neseitas mate agrega
+
+	-s --webtex
+
+---
+
 ### Mas información de Pandoc
 
 * [Manual](http://pandoc.org/MANUAL.html)
@@ -531,58 +769,65 @@ Las diapositivas también se separan con '\-\-\-'. Las presentaciones revealjs s
 * [Foro de ayuda con LaTeX](https://tex.stackexchange.com/)
 * [Ejemplos](http://pandoc.org/demos.html)
 
+---
 
 ## Ejemplo
 
 Esta es una fracción de mis notas de matemáticas:
 
+---
 
-	% **Libreta - Matemáticas**
-	% Semestre Agosto - Diciembre 2018
-	% Alejandro Escalante
+```
+% **Libreta - Matemáticas**
+% Semestre Agosto - Diciembre 2018
+% Alejandro Escalante
 
-	# Integrales y derivadas
+# Integrales y derivadas
 
-	La derivadas son una relación de diferencia de cambio de una curva.
+La derivadas son una relación de diferencia de cambio de una curva.
 
-	$$
-	pendiente = \frac{\Delta y}{\Delta x}
-	$$
+$$
+pendiente = \frac{\Delta y}{\Delta x}
+$$
 
-	Las integrales son la reversa de integrales, una buena forma de visualizar integrales es pensando en el área debajo de la curva.
+Las integrales son la reversa de integrales, una buena forma de visualizar integrales es pensando en el área debajo de la curva.
 
-	![Curva en rojo y área en gris](https://matplotlib.org/1.4.2/_images/integral_demo.png)
+![Curva en rojo y área en gris](https://matplotlib.org/1.4.2/_images/integral_demo.png)
 
-	\pagebreak
+\pagebreak
 
-	**Formulas de derivadas**
+**Formulas de derivadas**
 
-	_basica:_
+_basica:_
 
 
-	$$
-	x^n = nx^{n-1}
-	$$
+$$
+x^n = nx^{n-1}
+$$
 
-	_Casos comunes:_
+_Casos comunes:_
 
-	|  |  |  |
-	|--|--|--|
-	| $\frac{d}{dx}(c) = 0$ | $\frac{d}{dx}(x^n) = nx^{n-1}$ | $\frac{d}{dx}(e^x) = e^x$ |
-	| $(cf)' = cf'$ | $(f + g)' = f' + g'$ | $(f - g)' = f' - g'$ |
-	| $(fg)' = fg' + gf'$ | $\left( \frac{f}{g} \right) ' = \frac{gf'+fg'}{g^2}$ |  |
+|  |  |  |
+|--|--|--|
+| $\frac{d}{dx}(c) = 0$ | $\frac{d}{dx}(x^n) = nx^{n-1}$ | $\frac{d}{dx}(e^x) = e^x$ |
+| $(cf)' = cf'$ | $(f + g)' = f' + g'$ | $(f - g)' = f' - g'$ |
+| $(fg)' = fg' + gf'$ | $\left( \frac{f}{g} \right) ' = \frac{gf'+fg'}{g^2}$ |  |
 
-	_funciones trigonométricas:_
+_funciones trigonométricas:_
 
-	|  |  |  |
-	|--|--|--|
-	| $\frac{d}{dx}(sen x) = cos x$ | $\frac{d}{dx}(cos x) = -sen x$ | $\frac{d}{dx}(tan x) = sec^2 x$ |
-	| $\frac{d}{dx}(csc x) = -csc x cot x$ | $\frac{d}{dx}(sec x) = sec x tan x$ | $\frac{d}{dx}(cot x) = -csc^2x$ |	
+|  |  |  |
+|--|--|--|
+| $\frac{d}{dx}(sen x) = cos x$ | $\frac{d}{dx}(cos x) = -sen x$ | $\frac{d}{dx}(tan x) = sec^2 x$ |
+| $\frac{d}{dx}(csc x) = -csc x cot x$ | $\frac{d}{dx}(sec x) = sec x tan x$ | $\frac{d}{dx}(cot x) = -csc^2x$ |	
+```
 
-	
+---
+
 Si lo transformo a HTML con pandoc usando kaktex con el comando:
 
 	pandoc Notas_Matemáticas.md -s --katex   -o mate-notas-web.html
+	
+---
 	
 Pandoc genera el siguiente documento html:
 
@@ -652,23 +897,37 @@ Pandoc genera el siguiente documento html:
 	</body>
 	</html>
 
+---	
+
 Aunque no tengo la menor idea de como leer html lo subiré a [mi pagina](alex-esc.neocities.org) y agrego el link a mi css de estilo markdown y me produce:
 
-![](https://i.imgur.com/reoV9VD.png)
+---
+
+# {data-background-image="https://i.imgur.com/reoV9VD.png" data-background-size="contain"}
+
+---
 
 Esto me genera un respaldo en linea de mis notas, pero si quiero el archivo en pdf entonces uso estas instrucciones en pandoc:
 
 	pandoc Notas_Matemáticas.md -f markdown -o mate-notas.pdf
+	
+---
+
+# {data-background-image="https://i.imgur.com/scVPZrD.png" data-background-size="contain"}
 
 El siguiente PDF es generado:
 
-![](https://i.imgur.com/scVPZrD.png)
 
 > \*Screenshot de mis notas completas, el pdf real de esta conversión seria ligeramente diferente
 
+---
+
 ## En resumen
 
-un documento en markdown como:
+Markdown --> Pandoc --> PDF/Word/Slides/Pagina web
+
+---
+
 
 	% titulo
 	% autor
@@ -678,12 +937,16 @@ un documento en markdown como:
 
 	Este es el **contenido** con matemáticas $x=1$
 
-pasa por pandoc 2 veses, primero con las opciones:
+	
+---
+
+
+
 
 	pandoc midocumento.md -f markdown -s --katex -o midocumento.html
 
-y produce:
-
+Produce:
+	
 		<!DOCTYPE html>
 	<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta charset="utf-8" /><meta name="generator" content="pandoc" /><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" /><meta name="author" content="autor" />
 	  <title>titulo</title>
@@ -699,21 +962,81 @@ y produce:
 	<p>Este es el <strong>contenido</strong> con matemáticas <span class="math inline">\(x=1\)</span></p>
 	</body>
 	</html>
+	
+	
+::: notes
+pasa por pandoc 2 veses, primero con las opciones: y produce:
+:::	
+	
+
+---
+
 
 	
 Agrego mi css después de \<meta charset="utf-8" />
 
 	<link rel="stylesheet" href="css/modest.css">
 
+	
+---
+
 Genera esta pagina:
 
-![](https://i.imgur.com/iB4gthN.png)
 
-La segunda ves que pasa por pandoc, uso:
+---
+
+
+# {data-background-image="https://i.imgur.com/iB4gthN.png" data-background-size="contain"}
+
+
+---
+
 
 	pandoc midocumento.md -f markdown -o midocumento.pdf
 	
 Y me produce este PDF:
 
-![](https://i.imgur.com/gZweNTV.png)
 
+---
+
+
+# {data-background-image="https://i.imgur.com/gZweNTV.png" data-background-size="contain"}
+
+---
+
+# Extra tip!
+
+---
+
+Como hice esta presentación en particular?
+
+. . .
+
+use reveal js!
+
+	pandoc -s --webtex -t revealjs -s notas-slides.md -o slides_en_revealjs.html
+	
+Uso
+
+	. . .
+
+para revelar contenido
+
+---
+
+luego voy a slides.com y importo el codigo!
+
+---
+
+Hice este tutorial en texto, agrégalo a favoritos!
+
+[Esta en mi blog](alex-esc.github.io/blog/notas)
+
+---
+
+# Fin
+
+---
+
+
+# [alex-esc.github.io](alex-esc.github.io)
