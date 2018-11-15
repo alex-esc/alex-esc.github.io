@@ -6,6 +6,6 @@ other:
   home: https://alex-esc.github.io/
   docs: https://alex-esc.github.io/docs/document_index.html
   about: https://alex-esc.github.io/pages/about.html
-  language: 
+  language: https://alex-esc.github.io/language.html
 plugins:
   - jemoji
