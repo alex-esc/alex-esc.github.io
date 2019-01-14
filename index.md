@@ -1,4 +1,7 @@
-<meta name="yandex-verification" content="69aa3c2b56e86c5e" />
+---
+layout: default
+title: Welcome
+---
 
 Hola, esta es mi pagina personal donde puedes encontrar mis documentos y otros recursos.
 
@@ -20,3 +23,20 @@ Por ahora puedes ver:
 * [Documentos](/docs/document_index.md)
 * [Un cómic](https://c.xkcd.com/random/comic/)
 
+<!--
+
+{% for post in site.posts %}
+
+<article class='post'>
+  <h1 class='post-title'>
+    <a href="{{ site.path }}{{ post.url }}">
+      {{ post.title }}
+    </a>
+  </h1>
+  <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+  {{ post.content }}
+</article>
+
+{% endfor %}
+
+-->

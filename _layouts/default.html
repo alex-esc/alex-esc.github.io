@@ -1,46 +1,40 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>{{ page.title }} - {{ site.title }}</title>
+   <link rel="stylesheet" type="text/css" href="{{ site.path }}/css/style.css" >
+   <link rel="alternate" type="application/atom+xml" href="{{ site.path }}/feed.xml" title="News Feed">
+</head>
+<body>
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-        inlineMath: [['$','$']]
-      }
-    });
-  </script>
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
-	
-{% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
-	    
-	
-	<h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-	    
-	    
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-	<a href="{{ site.other.home }}" class="btn">Home</a>
-	<a href="{{ site.other.about }}" class="btn">About</a>
-        <a href="{{ /cv">CV</a></li>  }}" class="btn">CV</a>
-        <a href="{{ site.other.docs }}" class="btn">Documentos</a>
-		<a href="{{ site.other.language }}" class="btn">English / Spanish</a>
-      {% endif %}
-    </section>
+<div class="container">
+<header class="masthead">
+   <h3 class="masthead-title">
+     <a href="{{ site.path }}">{{ site.title }}</a>
+     <small>
+        &nbsp;&nbsp;&nbsp;<a href="{{ site.other.docs }}">Documentos</a>
+     </small>
+     <small>
+       &nbsp;&nbsp;&nbsp;<a href="{{ site.other.about }}">About Me</a>
+     </small>
+     <small>
+       &nbsp;&nbsp;&nbsp;<a href="{{ site.other.language }}">English / Spanish</a>
+     </small>
+   </h3>
+</header>
 
-    <section class="main-content">
-      {{ content }}
-	    
-  </body>
+<div id="content">
+  {{ content }}
+</div>
+
+</div><!-- .container -->
+</body>
 </html>
+
+<!--
+site.other.home
+site.other.about
+site.other.docs
+site.other.language
+-->

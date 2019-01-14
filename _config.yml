@@ -1,11 +1,30 @@
-theme: jekyll-theme-cayman
-title: Alejandro Escalante
-description: una pagina personal
-show_downloads: true
+title: 'Alejandro Escalante'
+author:
+  name: 'Alejandro Escalante'
+description: 'una pagina personal'
 other:
-  home: https://alex-esc.github.io/
-  docs: https://alex-esc.github.io/docs/document_index.html
-  about: https://alex-esc.github.io/pages/about.html
-  language: https://alex-esc.github.io/language.html
+  home: 'https://alex-esc.github.io/'
+  docs: 'https://alex-esc.github.io/docs/document_index.html'
+  about: 'https://alex-esc.github.io/pages/about.html'
+  language: 'https://alex-esc.github.io/language.html'
+
+path: ''
+url:  'https://alex-esc.github.io/'
+
+markdown: kramdown
+
+sass:
+  sass_dir: css
+  style:    expanded
+
+permalink: /:title.html
+
+exclude:
+- README.md
+
+safe: true
+lsi: false
+
+
 plugins:
   - jemoji
