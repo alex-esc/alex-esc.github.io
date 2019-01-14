@@ -8,7 +8,7 @@ other:
   about: 'https://alex-esc.github.io/pages/about.html'
   language: 'https://alex-esc.github.io/language.html'
 
-path: '/'
+path: 'https://alex-esc.github.io/'
 url:  'https://alex-esc.github.io/'
 
 markdown: kramdown
