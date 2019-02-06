@@ -1,0 +1,1 @@
+<meta http-equiv="refresh" content="0; URL='https://alex-esc.github.io/en_us/pages/about.html'" />
