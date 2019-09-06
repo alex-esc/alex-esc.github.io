@@ -3,6 +3,12 @@ layout: default
 title: Welcome
 ---
 
+<center>
+
+![Yo](img/mecir.png)
+
+</center>
+
 Hola, soy un estudiante de Animación y Arte Digital de 21 años, esta es mi pagina personal donde puedes encontrar mis documentos y otros recursos.
 
 Disfruto el cine de culto, escuchar y tocar música, un buen libro, la IndieWeb, desarrollar mis herramientas y el café en altas cantidades.
