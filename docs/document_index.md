@@ -10,9 +10,7 @@ Aquí encontraras mis documentos, si buscas algo en especial usa la tecla <code>
 ## Notas
 
 * [Historia Del Diseño](https://alex-esc.github.io/docs/historia_del_dise%C3%B1o_recursos.html)
-* [Biodiseño](https://alex-esc.github.io/docs/bio_dise%C3%B1o_recursos.html)
-* Introducción A física
-* Mate-Física Para El Diseño
+* [Biodiseño](https://alex-esc.github.io/docs/bio_dise%C3%B1o_recursos.html)<!--* Introducción A física* Mate-Física Para El Diseño-->
 * [Introdución A Programación - c#](https://mega.nz/#F!iWwFRAJA!UJfE12U8jh8AhCUGHq1VxQ)
 
 ## Reportes, Documentos y Artículos
@@ -33,6 +31,7 @@ Aquí encontraras mis documentos, si buscas algo en especial usa la tecla <code>
 
 ## Blog
 
+* [Lee otros artículos en mi blog](https://alex-esc.github.io/posts/)
 * [How to have all your contacts on one safe place.](https://alex-esc.github.io/blog/contacts.html)
 * [Why Online Privacy Matters? (Ingles)](https://alex-esc.github.io/posts/why-online-privacy-matters.html)
 
