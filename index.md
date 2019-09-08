@@ -4,9 +4,9 @@ title: Welcome
 ---
 
 
-
+<!--
 <center><img src="img/mecir.png"/></center>
-
+-->
 
 
 
