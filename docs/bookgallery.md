@@ -46,4 +46,4 @@ permalink: "bookshelf"
 ![](https://i.imgur.com/4ltuCV9m.jpg)
 ![](https://i.imgur.com/dUlw2Ism.jpg)
 ![](https://i.imgur.com/ovpSreem.jpg)
-![](https://i.imgur.com/ovpSreem.jpg)
+![](https://i.imgur.com/lbIL9zum.jpg)
