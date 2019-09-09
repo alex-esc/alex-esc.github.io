@@ -1,7 +1,7 @@
 ---
 layout: "null"
 title: "Linkbox - Public Bookmarks"
-redirect_from:
+permalink:
 - /linkbox.html
 - /bookmark.html
 - /bookmarks.html
