@@ -3,21 +3,46 @@ layout: "default"
 title: "Elsewhere on the net"
 ---
 
+
+
+
+
 <!--more-->
 
-Reddit:
 
-<iframe src="//rss.bloople.net/?url=https%3A%2F%2Fwww.reddit.com%2Fuser%2Falex_esc%2F.rss&showtitle=false&type=html" width="500" height="800"></iframe>
 
-Mastodon:
+<iframe src="//rss.bloople.net/?url=http%3A%2F%2Fwww.rssmix.com%2Fu%2F9114087%2Frss.xml&showtitle=false&striphtml=true&type=html"  width="500" height="800"></iframe>
 
-<iframe src="//rss.bloople.net/?url=https%3A%2F%2Fsocial.librem.one%2F%40alexesc.rss&showtitle=false&type=html" width="500" height="800"></iframe>
+Follow on the [fediverse][1] or [RSS][2].
 
-Blog:
 
-<iframe src="//rss.bloople.net/?url=https%3A%2F%2Falex-esc.github.io%2Fposts%2Ffeed.xml&showtitle=false&type=html" width="500" height="800"></iframe>
+[1]: https://bots.tinysubversions.com/u/alexesc/
+[2]: http://www.rssmix.com/u/9114087/rss.xml
 
-Bookmarks:
+<!--
 
-<iframe src="//rss.bloople.net/?url=https%3A%2F%2Falex-esc.github.io%2Furl%2Ffeed&showtitle=false&striphtml=true&type=html" width="500" height="800"></iframe>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.reddit.com/user/alex_esc/.rss
+https://social.librem.one/@alexesc.rss
+https://alex-esc.github.io/posts/feed.xml
+https://alex-esc.github.io/url/feed.xml
+
+
+
+
+
+
+-->
