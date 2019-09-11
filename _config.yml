@@ -28,3 +28,4 @@ lsi: false
 
 plugins:
   - jemoji
+  - jekyll-redirect-from
