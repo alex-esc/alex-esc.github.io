@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Welcome
+layout: Welcome
+title: My site
 ---
 
 
@@ -40,6 +40,9 @@ title: Welcome
 <center> <a href="https://alex-esc.github.io/en_us/pages/about.html">Mi CV</a><center/>
 
 ---
+
+
+
 
 Hola, soy un estudiante de Animación y Arte Digital de 21 años, esta es mi pagina personal donde puedes encontrar mis documentos y otros recursos.
 
