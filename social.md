@@ -11,12 +11,12 @@ title: "Elsewhere on the net"
 
 
 
-<iframe src="//rss.bloople.net/?url=http%3A%2F%2Fwww.rssmix.com%2Fu%2F9114087%2Frss.xml&showtitle=false&striphtml=true&type=html"  width="500" height="800"></iframe>
+<iframe src="//rss.bloople.net/?url=http%3A%2F%2Fwww.rssmix.com%2Fu%2F9114087%2Frss.xml&showtitle=false&striphtml=true&type=html"  width="620" height="800"></iframe>
 
 Follow on the [fediverse][1] or [RSS][2].
 
 
-[1]: https://bots.tinysubversions.com/u/alexesc/
+[1]: https://bots.tinysubversions.com/u/alexesc_social/
 [2]: http://www.rssmix.com/u/9114087/rss.xml
 
 <!--
