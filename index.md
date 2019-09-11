@@ -1,5 +1,5 @@
 ---
-layout: Welcome
+layout: welcome
 title: My site
 ---
 
