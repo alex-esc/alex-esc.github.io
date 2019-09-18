@@ -5,9 +5,9 @@ title: My site
 
 
 <!--
-<center><img src="img/mecir.png"/></center>
--->
 
+-->
+<center><img src="img/mecir.png"/></center>
 
 
 
