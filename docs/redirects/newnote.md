@@ -5,13 +5,13 @@ redirect_from:
 - /newnote.html
 - /newnote
 - /newnote/
-- /new note
+- /new%20note
 - /new-note
 - /new_note
-- /new note.html
+- /new%20note.html
 - /new-note.html
 - /new_note.html
-- /new note/
+- /new%20note/
 - /new-note/
 - /new_note/
 tags: [shortlink]
