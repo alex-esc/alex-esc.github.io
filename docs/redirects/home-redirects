@@ -1,0 +1,11 @@
+---
+layout: "null"
+title: "Home"
+redirect_from:
+- /h.html
+- /h
+tags: [shortlink]
+---
+<meta http-equiv="refresh" content="0; URL='
+https://alex-esc.github.io/home/
+'" />
