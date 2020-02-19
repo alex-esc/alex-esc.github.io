@@ -2,7 +2,7 @@
 layout: default
 ---
 
-hola, soy Alejandro Escalante, un estudiante Mexicano de animación y arte digital de 21 años.
+hola, soy Alejandro Escalante, un estudiante Mexicano de psicología de 21 años, anteriormente estudié animación y arte digital durante 2 años.
 
 Me gusta el cine y la computación.
 
@@ -12,7 +12,7 @@ Ademas de mis estudios actualmente desarrollo '[setupesc](https://github.com/ale
 
 En mi tiempo libre escribo un blog en ingles, practico piano informalmente, la paso con amigos en persona y en la red.
 
-Si te interesa alguno de mis projectos o buscas un colaborador, no tengas duda de [ponerte en contacto](https://alex-esc.github.io/contact).
+Si te interesa alguno de mis proyectos o buscas un colaborador, no tengas duda de [ponerte en contacto](https://alex-esc.github.io/contact).
 
 
 ### Trivia
