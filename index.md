@@ -5,13 +5,13 @@ title: My site
 
 
 <!--
-
--->
 <center><img src="img/mecir.png"/></center>
+-->
 
 
 
-Hola, soy un estudiante de Animación y Arte Digital de 21 años, esta es mi pagina personal donde puedes encontrar mis documentos y otros recursos.
+
+Hola, soy un estudiante de psicología de 21 años (anteriormente arte digital) y esta es mi pagina personal donde puedes encontrar mis documentos ademas de otros recursos.
 
 Disfruto el cine de culto, escuchar y tocar música, un buen libro, la IndieWeb, desarrollar mis herramientas y el café en altas cantidades.
 
