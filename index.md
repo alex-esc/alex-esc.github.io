@@ -5,10 +5,10 @@ title: My site
 
 
 <!--
-<center><img src="img/mecir.png"/></center>
+
 -->
 
-
+<center><img src="img/mecir.png"/></center>
 
 
 Hola, soy un estudiante de psicología de 21 años (anteriormente arte digital) y esta es mi pagina personal donde puedes encontrar mis documentos ademas de otros recursos.
