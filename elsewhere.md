@@ -4,8 +4,10 @@ title: Netizen
 
 ---
 
+<center>
+# [Fediverse][1] | [E-mail][2] | [Blog][3] | [Projects][4]
+</center>
 
-## [Fediverse][1] | [E-mail][2] | [Blog][3] | [Projects][4]
 
 [1]: https://social.librem.one/@alexesc
 [2]: mailto:alexesc@disroot.org
