@@ -8,7 +8,10 @@ title: My site
 <center><img src="img/mecir.png"/></center>
 -->
 
-
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+<script>
+  new Darkmode().showWidget();
+</script>
 
 
 Hola, soy un estudiante de psicología de 21 años (anteriormente arte digital) y esta es mi pagina personal donde puedes encontrar mis documentos ademas de otros recursos.
