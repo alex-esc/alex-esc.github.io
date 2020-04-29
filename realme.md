@@ -6,6 +6,38 @@ title: Netizen
 
 
 
+
+
+
+
+
+
+<center>
+<h1 id="email">Email</h1>
+<h2 id="alexesc-at-disroot-dot-org"><a href="mailto:alexesc@disroot.org">alexesc at disroot dot org</a></h2>
+<h1 id="social-media">Social media</h1>
+<h2 id="alexesctodon.nl"><a href="https://todon.nl/@alexesc">@alexesc@todon.nl</a></h2>
+<h2 id="ualex-esc"><a href="https://www.reddit.com/user/alex_esc/">u/alex-esc</a></h2>
+<h2 id="t.mealex_esc"><a href="https://t.me/alex_esc">t.me/alex_esc</a></h2>
+<h1 id="projects">Projects</h1>
+<h2 id="alex-esc.github.ioblog"><a href="https://alex-esc.github.io/posts/">alex-esc.github.io/blog</a></h2>
+<h2 id="digital-rights.github.io"><a href="https://digital-rights.github.io/">digital-rights.github.io</a></h2>
+</center>
+
+
+
+
+
+
+<!--more-->
+
+
+
+
+
+<!--
+
+
 <center>
 
 # Email
@@ -28,13 +60,6 @@ title: Netizen
 
 </center>
 
-<!--more-->
-
-
-
-
-
-<!--
 
 
 <center>
