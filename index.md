@@ -10,16 +10,16 @@ title: My site
 
 
 
-### Hello, I'm a 21 year old psychology mayor (formerly digital arts) and this is my personal site, where you can find my documents and other resources.
+## Hello, I'm a 21 year old psychology mayor (formerly digital arts) and this is my personal site, where you can find my documents and other resources.
 
-### I like cult films, listening and playing music, a good book, the new-web, developing my own tools and a daily high coffee dosis.
+## I like cult films, listening and playing music, a good book, the new-web, developing my own tools and a daily high coffee dosis.
 
 
 ---
 
 [Get in touch with me][1]
 
-[1]: https://alex-esc.github.io/en_us/contact.html
+[1]: https://alex-esc.github.io/realme
 
 <!--
 
