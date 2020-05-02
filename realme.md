@@ -10,8 +10,6 @@ title: Netizen
 
 
 
-
-
 <center>
 <h1 id="email">Email</h1>
 <h2 id="alexesc-at-disroot-dot-org"><a href="mailto:alexesc@disroot.org">alexesc at disroot dot org</a></h2>
@@ -22,24 +20,13 @@ title: Netizen
 <h1 id="projects">Projects</h1>
 <h2 id="alex-esc.github.ioblog"><a href="https://alex-esc.github.io/posts/">alex-esc.github.io/blog</a></h2>
 <h2 id="digital-rights.github.io"><a href="https://digital-rights.github.io/">digital-rights.github.io</a></h2>
-
-
-# Less frequent platforms
-
-## [twitter.com/alex_esc_tweets](https://twitter.com/alex_esc_tweets)
-
-## [medium.com/@alexesc](https://medium.com/@alexesc)
-
-# Videos
-
-## [alex-esc.github.io/youtube](https://alex-esc.github.io/youtube)
-
-## [alex-esc.github.io/twitch](https://alex-esc.github.io/twitch)
-
+<h1 id="less-frequent-platforms">Less frequent platforms</h1>
+<h2 id="twitter.comalex_esc_tweets"><a href="https://twitter.com/alex_esc_tweets">twitter.com/alex_esc_tweets</a></h2>
+<h2 id="medium.comalexesc"><a href="https://medium.com/@alexesc">medium.com/@alexesc</a></h2>
+<h1 id="videos">Videos</h1>
+<h2 id="alex-esc.github.ioyoutube"><a href="https://alex-esc.github.io/youtube">alex-esc.github.io/youtube</a></h2>
+<h2 id="alex-esc.github.iotwitch"><a href="https://alex-esc.github.io/twitch">alex-esc.github.io/twitch</a></h2>
 </center>
-
-<!--more-->
-
 
 
 
@@ -66,6 +53,18 @@ title: Netizen
 ## [alex-esc.github.io/blog](https://alex-esc.github.io/posts/)
 
 ## [digital-rights.github.io](https://digital-rights.github.io/)
+
+# Less frequent platforms
+
+## [twitter.com/alex_esc_tweets](https://twitter.com/alex_esc_tweets)
+
+## [medium.com/@alexesc](https://medium.com/@alexesc)
+
+# Videos
+
+## [alex-esc.github.io/youtube](https://alex-esc.github.io/youtube)
+
+## [alex-esc.github.io/twitch](https://alex-esc.github.io/twitch)
 
 </center>
 
