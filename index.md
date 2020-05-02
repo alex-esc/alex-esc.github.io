@@ -10,17 +10,16 @@ title: My site
 
 
 
+Hello, I'm a 21 year old psychology mayor (formerly digital arts) and this is my personal site, where you can find my documents and other resources.
 
-Hola, soy un estudiante de psicología de 21 años (anteriormente arte digital) y esta es mi pagina personal donde puedes encontrar mis documentos ademas de otros recursos.
-
-Disfruto el cine de culto, escuchar y tocar música, un buen libro, la IndieWeb, desarrollar mis herramientas y el café en altas cantidades.
+I like cult films, listening and playing music, a good book, the new-web, developing my own tools and a daily high coffee dosis.
 
 
 ---
 
-[Ponte en contacto conmigo][1]
+[Get in touch with me][1]
 
-[1]: https://alex-esc.github.io/contact.html
+[1]: https://alex-esc.github.io/en_us/contact.html
 
 <!--
 

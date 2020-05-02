@@ -2,28 +2,29 @@
 layout: default
 ---
 
-hola, soy Alejandro Escalante, un estudiante Mexicano de psicología de 21 años, anteriormente estudié animación y arte digital durante 2 años.
 
-Me gusta el cine y la computación.
+Hello, I'm Alex Esclanate, a Mexican 21 year old psychology mayor, who formerly studied digital arts for 2 years.
 
-Creo profundamente que la información y la educación no deberían ser privadas, en el sentido de "fuera del alcance" del publico y por eso estaré publicando aquí todas mis notas académicas, documentos como tareas y artículos, presentaciones, recursos de computación y tutoriales de diversos temas que me apasionan.
+I like movies and computers.
 
-Ademas de mis estudios actualmente desarrollo '[setupesc](https://github.com/alex-esc/setupesc)' un programa para facilitar el uso de computadoras Windows mediante macros, también soy autor de un proyecto llamado '[digital-rights](https://github.com/alex-esc/digitalrights)', este proyecto promueve la equidad de derechos humanos en Internet y ética en tecnológica moderna.
+I'm a strong believer that information as well as education shouldn't be secrets or out of reach of the general public and this is why I made this website, to publish all my academic notes, documents, articles, presentations (with and without narration) and even some homework as well as some personal written articles and tutorials I decide to do out of interest and passion for a given topic.
 
-En mi tiempo libre escribo un blog en ingles, practico piano informalmente, la paso con amigos en persona y en la red.
+I'm currently developing '[setupesc](https://github.com/alex-esc/setupesc)' , a program to facilitate everyday use of Widows computers via macros, I'm also the author of a project called '[digital-rights](https://github.com/alex-esc/digitalrights)', This project looks to promote equal rights online and offline, It also promotes human rights and ethics applied to modern technology.
 
-Si te interesa alguno de mis proyectos o buscas un colaborador, no tengas duda de [ponerte en contacto](https://alex-esc.github.io/contact).
+In my free time I write on my blog, play the piano, hang out online and with friends.
+
+If you're looking for a collaborator or are interested in one of my protects don't think twice and [get in touch](https://alex-esc.github.io/en_us/contact). 
 
 
 ### Trivia
 
-* Película favorita: Odisea del espacio 2001
-* Café > te, sin pensarlo
-* Redes sociales? No
+* Favorite movie: 2001 A Space Odyssey
+* Coffee > tea, no doubt
+* Are you on social media? No
 
 
 
 
 ---
 
-Si tienes alguna duda o quieres estar en contacto puedes contactarme en mi correo alexesc@disroot.org
+If you have any questions or want to keep contact you can reach me at alexesc@disroot.org
