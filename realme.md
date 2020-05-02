@@ -22,12 +22,21 @@ title: Netizen
 <h1 id="projects">Projects</h1>
 <h2 id="alex-esc.github.ioblog"><a href="https://alex-esc.github.io/posts/">alex-esc.github.io/blog</a></h2>
 <h2 id="digital-rights.github.io"><a href="https://digital-rights.github.io/">digital-rights.github.io</a></h2>
+
+
+# Less frequent platforms
+
+## [twitter.com/alex_esc_tweets](https://twitter.com/alex_esc_tweets)
+
+## [medium.com/@alexesc](https://medium.com/@alexesc)
+
+# Videos
+
+## [alex-esc.github.io/youtube](https://alex-esc.github.io/youtube)
+
+## [alex-esc.github.io/twitch](https://alex-esc.github.io/twitch)
+
 </center>
-
-
-
-
-
 
 <!--more-->
 

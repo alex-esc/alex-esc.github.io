@@ -1,10 +1,10 @@
 ---
 layout: "null"
-title: "YouTube"
+title: "twitch"
 redirect_from:
-- /youtube.html
+- /twitch.html
 tags: [shortlink]
 ---
 <meta http-equiv="refresh" content="0; URL='
-https://www.youtube.com/channel/UChpVVAlofTiqR_qAzNV-6lA
+https://www.twitch.tv/alexesc_
 '" />

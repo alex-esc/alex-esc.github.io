@@ -4,7 +4,10 @@ title: "mastodon"
 redirect_from:
 - /mastodon.html
 - /mastodon
-- /mastodon/
+- /masto/
+- /masto.html
+- /masto
+- /masto/
 - /libremsocial.html
 - /libremsocial
 - /libremsocial/
@@ -29,8 +32,24 @@ redirect_from:
 - /activitypub.html
 - /activitypub
 - /activitypub/
+- /todonnl.html
+- /todonnl
+- /todonnl/
+- /todon%20nl.html
+- /todon%20nl
+- /todon%20nl/
+- /todon-nl.html
+- /todon-nl
+- /todon-nl/
+- /todon_nl.html
+- /todon_nl
+- /todon_nl/
+- /todon.html
+- /todon
+- /todon/
+
 tags: [shortlink]
 ---
 <meta http-equiv="refresh" content="0; URL='
-https://social.librem.one/@alexesc
+https://todon.nl/@alexesc
 '" />
