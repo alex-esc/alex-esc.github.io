@@ -10,9 +10,9 @@ title: My site
 
 
 
-Hello, I'm a 21 year old psychology mayor (formerly digital arts) and this is my personal site, where you can find my documents and other resources.
+### Hello, I'm a 21 year old psychology mayor (formerly digital arts) and this is my personal site, where you can find my documents and other resources.
 
-I like cult films, listening and playing music, a good book, the new-web, developing my own tools and a daily high coffee dosis.
+### I like cult films, listening and playing music, a good book, the new-web, developing my own tools and a daily high coffee dosis.
 
 
 ---
