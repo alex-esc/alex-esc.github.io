@@ -3,13 +3,14 @@ layout: welcome
 title: Music
 ---
 
-<center>
 
-# Music Theory Notebook 
 
-# Production & Engineering Blog
+# [Music Theory Notebook][1] 
 
-</center>
+# [Production & Engineering Blog][2]
+
+[1]: https://wordsmith.social/music-theory-notebook/
+[2]: https://wordsmith.social/music-blog/
 
 
 
